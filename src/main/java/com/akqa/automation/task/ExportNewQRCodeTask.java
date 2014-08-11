@@ -56,14 +56,13 @@ public class ExportNewQRCodeTask extends TaskBase {
             backHome();
             ScreenRegion charTabRegion = mainScreenRegion.wait(Targets.chatTab, SHORT_WAIT_TIMEOUT);
             if (charTabRegion != null) {
-                mouse.doubleClick(charTabRegion.getCenter());
+                mouse.click(charTabRegion.getCenter());
             }
             try {
                 keyboard.type(Key.DOWN);
                 keyboard.type(Key.DOWN);
-                Thread.sleep(500);
+                Thread.sleep(1000);
                 keyboard.type(Key.ENTER);
-                Thread.sleep(500);
             } catch (InterruptedException e) {
 
             }
