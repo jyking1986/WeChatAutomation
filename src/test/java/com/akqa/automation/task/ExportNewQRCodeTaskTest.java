@@ -26,7 +26,8 @@ public class ExportNewQRCodeTaskTest {
 
     @Test
     @Ignore
-    public void testScroll() {
+    public void testScroll() throws InterruptedException {
+        Thread.sleep(2000);
         mouse.click(mainScreenRegion.getRelativeScreenLocation(600, 600));
         mouse.drag(mainScreenRegion.getRelativeScreenLocation(600, 600));
         mouse.drop(mainScreenRegion.getRelativeScreenLocation(600, 300));

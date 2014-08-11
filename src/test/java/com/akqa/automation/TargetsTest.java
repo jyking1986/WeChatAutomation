@@ -8,6 +8,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.sikuli.api.DesktopScreenRegion;
 import org.sikuli.api.ScreenRegion;
+import org.sikuli.api.Target;
+import org.sikuli.api.TextTarget;
 import org.sikuli.api.robot.Mouse;
 import org.sikuli.api.robot.desktop.DesktopMouse;
 
@@ -49,6 +51,24 @@ public class TargetsTest {
         String url = ImageHelper.extractContentFromQRCode(capture);
         System.out.println(url);
 
+    }
+
+    @Test
+    @Ignore
+    public void testLocateContactTurnOn() throws InterruptedException {
+        Thread.sleep(2000);
+        mainScreenRegion.setScore(0.2);
+        ScreenRegion contact = mainScreenRegion.wait(Targets.contactNotSaved, 1000);
+        mouse.click(contact.getCenter());
+    }
+
+    @Test
+    @Ignore
+    public void testLocateTextTarget() throws InterruptedException {
+        Thread.sleep(2000);
+        Target textTarget = new TextTarget("Save to Contacts");
+        ScreenRegion contact = mainScreenRegion.wait(textTarget, 600);
+        mouse.click(contact.getCenter());
     }
 
     protected void saveQRCode(final BufferedImage capture, final String fileName) throws IOException {

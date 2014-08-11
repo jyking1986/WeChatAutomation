@@ -34,6 +34,8 @@ public class CreateGroupTask extends TaskBase {
             if (confirmSelect2User != null) {
                 clickTarget(Targets.confirmGroupCreation, SHORT_WAIT_TIMEOUT);
                 clickTarget(Targets.groupEntry, LONG_WAIT_TIMEOUT);
+//                ScreenRegion contact = mainScreenRegion.wait(Targets.contactNotSaved, LONG_WAIT_TIMEOUT);
+//                mouse.click(contact.getRelativeScreenLocation(700, 20));
                 clickTarget(Targets.groupQrCodeEntry, LONG_WAIT_TIMEOUT);
                 ScreenRegion qrCode = mainScreenRegion.wait(Targets.qrCodeCorner, LONGER_WAIT_TIMEOUT);
                 if (qrCode != null) {

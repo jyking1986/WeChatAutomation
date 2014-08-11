@@ -25,6 +25,8 @@ public final class Targets {
     public static final Target wechatNav = constructTarget("wechat_nav");
     public static final Target chatTab = constructTarget("chat_tab");
     public static final Target back = constructTarget("back");
+    public static final Target contactNotSaved = constructTarget("contact_not_save");
+    public static final Target contactSaved = constructTarget("contact_saved");
     private static final String RESOURCE_PATH_FORMAT = "/target/%s.png";
 
     private static Target constructTarget(final String resourceName) {
