@@ -24,6 +24,8 @@ import static com.google.common.base.Preconditions.checkNotNull;
  */
 public abstract class TaskBase implements Task {
     public static final String EXTENSION = "jpg";
+    protected final static int QR_CODE_WIDTH = 200;
+    protected final static int QR_CODE_HEIGHT = 200;
     protected final static int SHORT_WAIT_TIMEOUT = 300;
     protected final static int LONG_WAIT_TIMEOUT = 2000;
     protected final static int LONGER_WAIT_TIMEOUT = 8000;

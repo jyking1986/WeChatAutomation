@@ -38,7 +38,7 @@ public class CreateGroupTask extends TaskBase {
                 ScreenRegion qrCode = mainScreenRegion.wait(Targets.qrCodeCorner, LONGER_WAIT_TIMEOUT);
                 if (qrCode != null) {
                     Rectangle bounds = qrCode.getBounds();
-                    BufferedImage capture = mainScreenRegion.getScreen().getScreenshot(bounds.x, bounds.y, 200, 200);
+                    BufferedImage capture = mainScreenRegion.getScreen().getScreenshot(bounds.x, bounds.y, QR_CODE_WIDTH, QR_CODE_HEIGHT);
                     try {
                         String url = ImageHelper.extractContentFromQRCode(capture);
                         System.out.println(url);
