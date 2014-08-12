@@ -89,6 +89,13 @@ public class TargetsTest {
 
     @Test
     @Ignore
+    public void testParseText() throws InterruptedException {
+        ScreenRegion contact = mainScreenRegion.wait(Targets.contactGroupEntry, 600);
+        mouse.click(contact.getCenter());
+    }
+
+    @Test
+    @Ignore
     public void testGoNextPage() throws InterruptedException {
         Thread.sleep(2000);
         ScreenRegion chatTab = mainScreenRegion.wait(Targets.chatTab, 600);
