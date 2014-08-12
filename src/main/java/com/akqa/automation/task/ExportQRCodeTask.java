@@ -5,8 +5,6 @@ import com.akqa.automation.client.NRCClient;
 import com.akqa.automation.qrcode.ImageHelper;
 import org.sikuli.api.ScreenRegion;
 import org.sikuli.api.robot.Key;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -19,7 +17,6 @@ import java.util.ArrayList;
  * Time: 4:32 PM
  */
 public class ExportQRCodeTask extends TaskBase {
-    private static final Logger log = LoggerFactory.getLogger(ExportQRCodeTask.class);
     private final NRCClient nrcClient;
     private final int count;
 
@@ -63,13 +60,13 @@ public class ExportQRCodeTask extends TaskBase {
             backHome();
 
             if (links.size() > 20) {
-                log.info(String.format("Refresh %s WeChat Group QR Code.", links.size()));
+                System.out.println(String.format("Refresh %s WeChat Group QR Code.", links.size()));
                 nrcClient.refreshQRCodeLinks(links);
                 links.clear();
             }
         }
 
-        log.info(String.format("Refresh %s WeChat Group QR Code.", links.size()));
+        System.out.println(String.format("Refresh %s WeChat Group QR Code.", links.size()));
         if (links.size() > 0) {
             nrcClient.refreshQRCodeLinks(links);
         }

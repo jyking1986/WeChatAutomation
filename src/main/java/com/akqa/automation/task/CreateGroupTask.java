@@ -4,8 +4,6 @@ import com.akqa.automation.Targets;
 import com.akqa.automation.client.NRCClient;
 import com.akqa.automation.qrcode.ImageHelper;
 import org.sikuli.api.ScreenRegion;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -18,7 +16,6 @@ import java.util.ArrayList;
  * Time: 10:58 AM
  */
 public class CreateGroupTask extends TaskBase {
-    private static final Logger log = LoggerFactory.getLogger(CreateGroupTask.class);
     private final int groupCount;
     private final NRCClient nrcClient;
 
@@ -42,6 +39,7 @@ public class CreateGroupTask extends TaskBase {
             ScreenRegion confirmSelect2User = mainScreenRegion.wait(Targets.select2User, SHORT_WAIT_TIMEOUT);
             if (confirmSelect2User != null) {
                 clickTarget(Targets.confirmGroupCreation, SHORT_WAIT_TIMEOUT);
+                System.out.println(String.format("%s Creating WeChat group", i));
                 clickTarget(Targets.groupEntry, LONG_WAIT_TIMEOUT);
                 ScreenRegion contact = mainScreenRegion.wait(Targets.contactNotSaved, LONG_WAIT_TIMEOUT);
                 if (contact != null) {
@@ -53,6 +51,7 @@ public class CreateGroupTask extends TaskBase {
                     Rectangle bounds = qrCode.getBounds();
                     BufferedImage capture = mainScreenRegion.getScreen().getScreenshot(bounds.x, bounds.y, QR_CODE_WIDTH, QR_CODE_HEIGHT);
                     try {
+                        System.out.println(String.format("%s Generating WeChat group", i));
                         links.add(ImageHelper.extractContentFromQRCode(capture));
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
@@ -62,7 +61,7 @@ public class CreateGroupTask extends TaskBase {
 
         }
 
-        log.info(String.format("Currently generate %s new WeChat Group, expected %s", links.size(), groupCount));
+        System.out.println(String.format("Currently generate %s new WeChat Group, expected %s", links.size(), groupCount));
 
         if (links.size() > 0) {
             nrcClient.addNewQRCodeLinks(links);
