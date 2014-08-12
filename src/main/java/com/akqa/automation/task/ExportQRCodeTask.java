@@ -36,8 +36,6 @@ public class ExportQRCodeTask extends TaskBase {
 
             try {
                 clickTarget(Targets.groupEntry, LONG_WAIT_TIMEOUT);
-//                ScreenRegion contact = mainScreenRegion.wait(Targets.contactNotSaved, LONG_WAIT_TIMEOUT);
-//                mouse.doubleClick(contact.getRelativeScreenLocation(1200, 20));
                 clickTarget(Targets.groupQrCodeEntry, LONG_WAIT_TIMEOUT);
                 ScreenRegion qrCode = mainScreenRegion.wait(Targets.qrCodeCorner, LONGER_WAIT_TIMEOUT);
                 if (qrCode != null) {
