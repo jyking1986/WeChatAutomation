@@ -6,7 +6,10 @@ import com.google.zxing.FormatException;
 import com.google.zxing.NotFoundException;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.sikuli.api.*;
+import org.sikuli.api.DesktopScreenRegion;
+import org.sikuli.api.ScreenRegion;
+import org.sikuli.api.Target;
+import org.sikuli.api.TextTarget;
 import org.sikuli.api.robot.Key;
 import org.sikuli.api.robot.Keyboard;
 import org.sikuli.api.robot.Mouse;
@@ -87,21 +90,18 @@ public class TargetsTest {
     @Test
     @Ignore
     public void testGoNextPage() throws InterruptedException {
-        ScreenRegion contact = mainScreenRegion.wait(Targets.chatTab, 600);
-        ScreenLocation back = mainScreenRegion.find(Targets.back).getCenter();
-        for (int i = 0; i < 10; i++) {
-            mouse.doubleClick(contact.getCenter());
-            for (int j = 0; j <= i; j++) {
-                keyboard.type(Key.DOWN);
-            }
+        Thread.sleep(2000);
+        ScreenRegion chatTab = mainScreenRegion.wait(Targets.chatTab, 600);
+        mouse.click(chatTab.getCenter());
+        mouse.doubleClick(chatTab.getCenter());
+        mouse.click(chatTab.getRelativeScreenLocation(300, 70));
+        mouse.click(mainScreenRegion.find(Targets.wechatNav).getCenter());
+        for (int i = 0; i < 20; i++) {
+            keyboard.type(Key.DOWN + Key.DOWN);
             System.out.println(i);
             Thread.sleep(1000);
             keyboard.type(Key.ENTER);
-
-            ScreenRegion mainRegion = mainScreenRegion.find(Targets.mainScreen);
-            if (mainRegion == null) {
-                mouse.click(back);
-            }
+            mouse.click(mainScreenRegion.find(Targets.wechatNav).getCenter());
         }
     }
 
