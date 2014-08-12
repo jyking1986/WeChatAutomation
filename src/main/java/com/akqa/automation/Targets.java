@@ -20,13 +20,15 @@ public final class Targets {
     public static final Target groupEntry = constructTarget("group_entry");
     public static final Target qrCodeCorner = constructTarget("qr_code_corner");
     public static final Target groupQrCodeEntry = constructTarget("group_qr_code_entry");
-    public static final Target user1Snapshot = constructTarget("user1_snapshot");
-    public static final Target user2Snapshot = constructTarget("user2_snapshot");
+    public static final Target user1Snapshot = constructTarget("user1");
+    public static final Target user2Snapshot = constructTarget("user2");
     public static final Target wechatNav = constructTarget("wechat_nav");
     public static final Target chatTab = constructTarget("chat_tab");
     public static final Target back = constructTarget("back");
-    public static final Target contactNotSaved = constructTarget("contact_not_save");
+    public static final Target contactNotSaved = constructTarget("contact_not_save1");
     public static final Target contactSaved = constructTarget("contact_saved");
+    public static final Target contactEntry = constructTarget("contact_entry");
+    public static final Target contactGroupEntry = constructTarget("contact_group_entry");
     private static final String RESOURCE_PATH_FORMAT = "/target/%s.png";
 
     private static Target constructTarget(final String resourceName) {

@@ -35,7 +35,6 @@ public class TargetsTest {
     public void testLocateTarget() {
         ScreenRegion user1 = mainScreenRegion.find(Targets.user1Snapshot);
         mouse.click(user1.getCenter());
-        mouse.click(user1.getCenter());
 
         ScreenRegion user2 = mainScreenRegion.find(Targets.user2Snapshot);
         mouse.click(user2.getCenter());
@@ -57,9 +56,8 @@ public class TargetsTest {
     @Ignore
     public void testLocateContactTurnOn() throws InterruptedException {
         Thread.sleep(2000);
-        mainScreenRegion.setScore(0.2);
         ScreenRegion contact = mainScreenRegion.wait(Targets.contactNotSaved, 1000);
-        mouse.click(contact.getCenter());
+        mouse.doubleClick(contact.getRelativeScreenLocation(1200, 20));
     }
 
     @Test
@@ -68,6 +66,20 @@ public class TargetsTest {
         Thread.sleep(2000);
         Target textTarget = new TextTarget("Save to Contacts");
         ScreenRegion contact = mainScreenRegion.wait(textTarget, 600);
+        mouse.click(contact.getCenter());
+    }
+
+    @Test
+    @Ignore
+    public void testLocateContact() throws InterruptedException {
+        ScreenRegion contact = mainScreenRegion.wait(Targets.contactEntry, 600);
+        mouse.click(contact.getCenter());
+    }
+
+    @Test
+    @Ignore
+    public void testLocateContactGroup() throws InterruptedException {
+        ScreenRegion contact = mainScreenRegion.wait(Targets.contactGroupEntry, 600);
         mouse.click(contact.getCenter());
     }
 

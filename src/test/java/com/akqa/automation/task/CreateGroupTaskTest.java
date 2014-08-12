@@ -13,7 +13,7 @@ public class CreateGroupTaskTest {
     @Test
     @Ignore
     public void testExecute() throws Exception {
-        CreateGroupTask createGroupTask = new CreateGroupTask(2);
+        CreateGroupTask createGroupTask = new CreateGroupTask(10);
         createGroupTask.execute();
     }
 }
