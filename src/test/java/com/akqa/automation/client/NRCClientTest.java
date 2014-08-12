@@ -16,9 +16,15 @@ import java.util.List;
  * Time: 6:43 PM
  */
 public class NRCClientTest {
-    @Test
-    public void testAddNewQRCodeLinks() throws Exception {
 
+    @Test
+    @Ignore
+    public void testAddNewQRCodeLinks() throws Exception {
+        List<String> links = new ArrayList<>();
+        links.add("http://weixin.qq.com/g/AQV4Z9VnkqINGCG/1");
+        links.add("http://weixin.qq.com/g/AX13Kqoz4c68O+aB1");
+        NRCClient client = new NRCClient("localhost:8080");
+        client.addNewQRCodeLinks(links);
     }
 
     @Test
