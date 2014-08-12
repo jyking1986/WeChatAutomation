@@ -24,6 +24,7 @@ public class ExportQRCodeTask extends TaskBase {
     private final int count;
 
     public ExportQRCodeTask(final NRCClient nrcClient, final int count) {
+        super("export-qr-code");
         this.nrcClient = nrcClient;
         this.count = count;
     }

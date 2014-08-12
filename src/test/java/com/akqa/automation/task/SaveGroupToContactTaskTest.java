@@ -1,5 +1,6 @@
 package com.akqa.automation.task;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -10,6 +11,7 @@ import org.junit.Test;
  */
 public class SaveGroupToContactTaskTest {
     @Test
+    @Ignore
     public void testExecute() throws Exception {
         SaveGroupToContactTask saveGroupToContactTask = new SaveGroupToContactTask(100);
         saveGroupToContactTask.execute();

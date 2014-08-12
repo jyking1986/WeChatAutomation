@@ -23,6 +23,7 @@ public class CreateGroupTask extends TaskBase {
     private final NRCClient nrcClient;
 
     public CreateGroupTask(final int groupCount, final NRCClient nrcClient) {
+        super("create-group");
         this.groupCount = groupCount;
         this.nrcClient = nrcClient;
     }

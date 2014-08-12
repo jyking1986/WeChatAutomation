@@ -32,6 +32,16 @@ public abstract class TaskBase implements Task {
     protected final ScreenRegion mainScreenRegion = new DesktopScreenRegion();
     protected final Mouse mouse = new DesktopMouse();
     protected final Keyboard keyboard = new DesktopKeyboard();
+    private final String name;
+
+    protected TaskBase(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
 
     protected ScreenRegion backHome() {
         ScreenRegion homeRegion = null;

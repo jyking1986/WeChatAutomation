@@ -15,6 +15,7 @@ public class SaveGroupToContactTask extends TaskBase {
     private final int count;
 
     public SaveGroupToContactTask(int count) {
+        super("save-to-contact");
         this.count = count;
     }
 

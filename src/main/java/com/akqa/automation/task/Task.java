@@ -8,4 +8,7 @@ package com.akqa.automation.task;
  */
 public interface Task {
     void execute();
+
+    String getName();
+
 }
