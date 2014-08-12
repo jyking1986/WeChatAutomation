@@ -1,12 +1,16 @@
 package com.akqa.automation.task;
 
 import com.akqa.automation.Targets;
+import com.akqa.automation.client.NRCClient;
 import com.akqa.automation.qrcode.ImageHelper;
 import org.sikuli.api.ScreenRegion;
 import org.sikuli.api.robot.Key;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,9 +19,12 @@ import java.awt.image.BufferedImage;
  * Time: 4:32 PM
  */
 public class ExportQRCodeTask extends TaskBase {
+    private static final Logger log = LoggerFactory.getLogger(ExportQRCodeTask.class);
+    private final NRCClient nrcClient;
     private final int count;
 
-    public ExportQRCodeTask(int count) {
+    public ExportQRCodeTask(final NRCClient nrcClient, final int count) {
+        this.nrcClient = nrcClient;
         this.count = count;
     }
 
@@ -30,6 +37,7 @@ public class ExportQRCodeTask extends TaskBase {
         mouse.doubleClick(chatTab.getCenter());
         mouse.click(chatTab.getRelativeScreenLocation(300, 70));
         mouse.click(mainScreenRegion.find(Targets.wechatNav).getCenter());
+        java.util.List<String> links = new ArrayList<>();
         for (int i = 0; i < count; i++) {
             keyboard.type(Key.DOWN + Key.DOWN);
             keyboard.type(Key.ENTER);
@@ -42,8 +50,7 @@ public class ExportQRCodeTask extends TaskBase {
                     Rectangle bounds = qrCode.getBounds();
                     BufferedImage capture = mainScreenRegion.getScreen().getScreenshot(bounds.x, bounds.y, QR_CODE_WIDTH, QR_CODE_HEIGHT);
                     try {
-                        String url = ImageHelper.extractContentFromQRCode(capture);
-                        System.out.println(url);
+                        links.add(ImageHelper.extractContentFromQRCode(capture));
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
                     }
@@ -53,6 +60,17 @@ public class ExportQRCodeTask extends TaskBase {
             }
 
             backHome();
+
+            if (links.size() > 20) {
+                log.info(String.format("Refresh %s WeChat Group QR Code.", links.size()));
+                nrcClient.refreshQRCodeLinks(links);
+                links.clear();
+            }
+        }
+
+        log.info(String.format("Refresh %s WeChat Group QR Code.", links.size()));
+        if (links.size() > 0) {
+            nrcClient.refreshQRCodeLinks(links);
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.akqa.automation.task;
 
+import com.akqa.automation.client.NRCClient;
 import org.junit.Test;
 
 /**
@@ -11,7 +12,8 @@ import org.junit.Test;
 public class ExportQRCodeTaskTest {
     @Test
     public void testExecute() throws Exception {
-        ExportQRCodeTask exportQRCodeTask = new ExportQRCodeTask(2);
+        NRCClient nrcClient = new NRCClient("localhost:8080");
+        ExportQRCodeTask exportQRCodeTask = new ExportQRCodeTask(nrcClient, 15);
         exportQRCodeTask.execute();
     }
 }

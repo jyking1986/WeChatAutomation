@@ -32,4 +32,13 @@ public class NRCClient {
 
         log.info(response.getEntity(String.class));
     }
+
+    public void refreshQRCodeLinks(final List<String> links) {
+        final String url = String.format("http://%s/api/group/qrcode/refreshlink", server);
+
+        ClientResponse response = client.resource(url).header("Authorization", "Basic cm9vdDpyb290")
+                .type(MediaType.APPLICATION_JSON).post(ClientResponse.class, links);
+
+        log.info(response.getEntity(String.class));
+    }
 }
