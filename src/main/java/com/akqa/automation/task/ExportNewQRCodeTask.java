@@ -59,8 +59,7 @@ public class ExportNewQRCodeTask extends TaskBase {
                 mouse.click(charTabRegion.getCenter());
             }
             try {
-                keyboard.type(Key.DOWN);
-                keyboard.type(Key.DOWN);
+                keyboard.type(Key.DOWN + Key.DOWN);
                 Thread.sleep(1000);
                 keyboard.type(Key.ENTER);
             } catch (InterruptedException e) {

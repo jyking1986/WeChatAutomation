@@ -20,7 +20,7 @@ public class ExportNewQRCodeTaskTest {
     @Test
     @Ignore
     public void testExecute() throws Exception {
-        ExportNewQRCodeTask exportNewQRCodeTask = new ExportNewQRCodeTask(30);
+        ExportNewQRCodeTask exportNewQRCodeTask = new ExportNewQRCodeTask(15);
         exportNewQRCodeTask.execute();
     }
 
@@ -31,5 +31,12 @@ public class ExportNewQRCodeTaskTest {
         mouse.click(mainScreenRegion.getRelativeScreenLocation(600, 600));
         mouse.drag(mainScreenRegion.getRelativeScreenLocation(600, 600));
         mouse.drop(mainScreenRegion.getRelativeScreenLocation(600, 300));
+    }
+
+    @Test
+    @Ignore
+    public void testWheel() throws InterruptedException {
+        Thread.sleep(2000);
+        mouse.wheel(1, 1);
     }
 }

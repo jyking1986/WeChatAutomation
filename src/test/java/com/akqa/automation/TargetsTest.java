@@ -6,11 +6,11 @@ import com.google.zxing.FormatException;
 import com.google.zxing.NotFoundException;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.sikuli.api.DesktopScreenRegion;
-import org.sikuli.api.ScreenRegion;
-import org.sikuli.api.Target;
-import org.sikuli.api.TextTarget;
+import org.sikuli.api.*;
+import org.sikuli.api.robot.Key;
+import org.sikuli.api.robot.Keyboard;
 import org.sikuli.api.robot.Mouse;
+import org.sikuli.api.robot.desktop.DesktopKeyboard;
 import org.sikuli.api.robot.desktop.DesktopMouse;
 
 import javax.imageio.ImageIO;
@@ -29,6 +29,7 @@ public class TargetsTest {
     public static final String EXTENSION = "jpg";
     protected final ScreenRegion mainScreenRegion = new DesktopScreenRegion();
     protected final Mouse mouse = new DesktopMouse();
+    protected final Keyboard keyboard = new DesktopKeyboard();
 
     @Test
     @Ignore
@@ -81,6 +82,27 @@ public class TargetsTest {
     public void testLocateContactGroup() throws InterruptedException {
         ScreenRegion contact = mainScreenRegion.wait(Targets.contactGroupEntry, 600);
         mouse.click(contact.getCenter());
+    }
+
+    @Test
+    @Ignore
+    public void testGoNextPage() throws InterruptedException {
+        ScreenRegion contact = mainScreenRegion.wait(Targets.chatTab, 600);
+        ScreenLocation back = mainScreenRegion.find(Targets.back).getCenter();
+        for (int i = 0; i < 10; i++) {
+            mouse.doubleClick(contact.getCenter());
+            for (int j = 0; j <= i; j++) {
+                keyboard.type(Key.DOWN);
+            }
+            System.out.println(i);
+            Thread.sleep(1000);
+            keyboard.type(Key.ENTER);
+
+            ScreenRegion mainRegion = mainScreenRegion.find(Targets.mainScreen);
+            if (mainRegion == null) {
+                mouse.click(back);
+            }
+        }
     }
 
     protected void saveQRCode(final BufferedImage capture, final String fileName) throws IOException {
