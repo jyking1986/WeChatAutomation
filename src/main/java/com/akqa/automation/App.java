@@ -33,9 +33,9 @@ public class App {
         NRCClient nrcClient = new NRCClient(server);
         Task createGroupTask = new CreateGroupTask(5, nrcClient);
         taskMap.put(createGroupTask.getName(), createGroupTask);
-        Task exportQRCodeTask = new ExportQRCodeTask(nrcClient, 40);
+        Task exportQRCodeTask = new ExportQRCodeTask(nrcClient, 400);
         taskMap.put(exportQRCodeTask.getName(), exportQRCodeTask);
-        Task saveGroupToContactTask = new SaveGroupToContactTask(40);
+        Task saveGroupToContactTask = new SaveGroupToContactTask(400);
         taskMap.put(saveGroupToContactTask.getName(), saveGroupToContactTask);
 
         if (args.length < 1) {
