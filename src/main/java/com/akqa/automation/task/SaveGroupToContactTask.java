@@ -1,6 +1,8 @@
 package com.akqa.automation.task;
 
 import com.akqa.automation.Targets;
+import org.sikuli.api.Relative;
+import org.sikuli.api.ScreenLocation;
 import org.sikuli.api.ScreenRegion;
 import org.sikuli.api.robot.Key;
 
@@ -33,12 +35,17 @@ public class SaveGroupToContactTask extends TaskBase {
             keyboard.type(Key.ENTER);
 
             try {
-                clickTarget(Targets.groupMemberSummary, LONG_WAIT_TIMEOUT);
+                clickTarget(Targets.groupEntry, LONGER_WAIT_TIMEOUT);
+                clickTarget(Targets.groupMemberSummary, LONGER_WAIT_TIMEOUT);
                 System.out.println("Located target: groupMemberSummary");
-                mouse.wheel(1, 10);
-                clickTarget(Targets.groupEntry, LONG_WAIT_TIMEOUT);
+                ScreenRegion home = mainScreenRegion.find(Targets.home);
+                ScreenLocation from = home.getRelativeScreenLocation(20, -60);
+                ScreenLocation to = Relative.to(from).above(500).getScreenLocation();
+                mouse.drag(from);
+                mouse.drop(to);
+                mouse.wheel(1, 100);
                 ScreenRegion contact = mainScreenRegion.wait(Targets.contactNotSaved, LONG_WAIT_TIMEOUT);
-                mouse.doubleClick(contact.getRelativeScreenLocation(1200, 20));
+                mouse.doubleClick(contact.getRelativeScreenLocation(1200, 25));
             } catch (Exception e) {
                 System.out.println("Not a group.");
                 e.printStackTrace(System.err);

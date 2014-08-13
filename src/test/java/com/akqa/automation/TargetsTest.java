@@ -60,8 +60,11 @@ public class TargetsTest {
     @Ignore
     public void testLocateContactTurnOn() throws InterruptedException {
         Thread.sleep(2000);
+        System.out.println(mainScreenRegion.getScore());
+        mainScreenRegion.setScore(0.85);
         ScreenRegion contact = mainScreenRegion.wait(Targets.contactNotSaved, 1000);
-        mouse.doubleClick(contact.getRelativeScreenLocation(1200, 20));
+        System.out.println(contact.getScore());
+        mouse.doubleClick(contact.getRelativeScreenLocation(1200, 25));
     }
 
     @Test

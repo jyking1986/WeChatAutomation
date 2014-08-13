@@ -26,8 +26,8 @@ public abstract class TaskBase implements Task {
     public static final String EXTENSION = "jpg";
     protected final static int QR_CODE_WIDTH = 200;
     protected final static int QR_CODE_HEIGHT = 200;
-    protected final static int SHORT_WAIT_TIMEOUT = 300;
-    protected final static int LONG_WAIT_TIMEOUT = 2000;
+    protected final static int SHORT_WAIT_TIMEOUT = 1000;
+    protected final static int LONG_WAIT_TIMEOUT = 3000;
     protected final static int LONGER_WAIT_TIMEOUT = 8000;
     protected final ScreenRegion mainScreenRegion = new DesktopScreenRegion();
     protected final Mouse mouse = new DesktopMouse();
@@ -48,8 +48,8 @@ public abstract class TaskBase implements Task {
         int retry = 5;
         while (homeRegion == null && retry > 0) {
             retry--;
-            clickTarget(Targets.wechatNav, SHORT_WAIT_TIMEOUT);
-            homeRegion = mainScreenRegion.wait(Targets.chatTab, SHORT_WAIT_TIMEOUT);
+            clickTarget(Targets.wechatNav, LONG_WAIT_TIMEOUT);
+            homeRegion = mainScreenRegion.wait(Targets.chatTab, LONG_WAIT_TIMEOUT);
         }
 
         checkNotNull(homeRegion);
