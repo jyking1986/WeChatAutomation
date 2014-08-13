@@ -45,6 +45,7 @@ public class ExportQRCodeTask extends TaskBase {
                 clickTarget(Targets.groupQrCodeEntry, LONG_WAIT_TIMEOUT);
                 ScreenRegion qrCode = mainScreenRegion.wait(Targets.qrCodeCorner, LONGER_WAIT_TIMEOUT);
                 if (qrCode != null) {
+                    System.out.println(String.format("Generating the %s .", links.size()));
                     Rectangle bounds = qrCode.getBounds();
                     BufferedImage capture = mainScreenRegion.getScreen().getScreenshot(bounds.x, bounds.y, QR_CODE_WIDTH, QR_CODE_HEIGHT);
                     try {
@@ -59,7 +60,7 @@ public class ExportQRCodeTask extends TaskBase {
 
             backHome();
 
-            if (links.size() > 20) {
+            if (links.size() > 5) {
                 System.out.println(String.format("Refresh %s WeChat Group QR Code.", links.size()));
                 nrcClient.refreshQRCodeLinks(links);
                 links.clear();
