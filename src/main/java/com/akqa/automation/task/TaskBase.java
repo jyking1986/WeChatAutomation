@@ -63,6 +63,7 @@ public abstract class TaskBase implements Task {
         ScreenRegion targetRegion = mainScreenRegion.wait(target, shortWaitTimeout);
         checkNotNull(targetRegion);
 
+
         mouse.click(targetRegion.getCenter());
     }
 

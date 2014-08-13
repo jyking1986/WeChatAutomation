@@ -27,6 +27,7 @@ public final class Targets {
     public static final Target contactNotSaved = constructTarget("contact_not_save");
     public static final Target contactEntry = constructTarget("contact_entry");
     public static final Target contactGroupEntry = constructTarget("contact_group_entry");
+    public static final Target groupMemberSummary = constructTarget("group_member_summary");
     private static final String RESOURCE_PATH_FORMAT = "/target/%s.png";
 
     private static Target constructTarget(final String resourceName) {
