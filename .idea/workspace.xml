@@ -74,7 +74,7 @@
     <file path="/fragment.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407843503706" ignored="false" />
     <file path="/CreateGroupTaskTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407839730084" ignored="false" />
     <file path="/TargetsTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407835039716" ignored="false" />
-    <file path="/Dummy.txt" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407903041894" ignored="false" />
+    <file path="/Dummy.txt" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407910677688" ignored="false" />
     <file path="/ImageHelper.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407749045050" ignored="false" />
     <file path="$PROJECT_DIR$/../NikePlusRunClub/src/main/resources/i18n/messages_zh_CN.properties" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407752942326" ignored="false" />
     <file path="/ExportNewQRCodeTask.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407773238770" ignored="false" />
@@ -954,7 +954,11 @@
       <created>1407903045575</created>
       <updated>1407903045575</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add new wechat group">
+      <created>1407910680269</created>
+      <updated>1407910680269</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
