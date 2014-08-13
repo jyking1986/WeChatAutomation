@@ -83,6 +83,7 @@ public class TargetsTest {
     @Test
     @Ignore
     public void testLocateContactGroup() throws InterruptedException {
+        Thread.sleep(2000);
         ScreenRegion contact = mainScreenRegion.wait(Targets.contactGroupEntry, 600);
         mouse.click(contact.getCenter());
     }

@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30491cfe-6136-47d8-b0c5-9a2620e40b7b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/akqa/automation/TargetsTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/akqa/automation/TargetsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeChatAutomation.iml" afterPath="$PROJECT_DIR$/WeChatAutomation.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WeChatAutomation.iws" />
@@ -36,6 +39,46 @@
     <ignored path=".idea/libraries/Maven__com_google_zxing_core_2_2.xml" />
     <ignored path=".idea/libraries/Maven__com_google_zxing_javase_2_0.xml" />
     <ignored path=".idea/libraries/sikuli_api_1_0_2_standalone.xml" />
+    <ignored path=".idea/libraries/Maven__com_yammer_metrics_metrics_jetty_2_2_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_eclipse_jetty_jetty_continuation_8_1_10_v20130312.xml" />
+    <ignored path=".idea/libraries/Maven__com_yammer_metrics_metrics_logback_2_2_0.xml" />
+    <ignored path=".idea/libraries/Maven__com_sun_jersey_jersey_server_1_17_1.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_1_4.xml" />
+    <ignored path=".idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_17_1.xml" />
+    <ignored path=".idea/libraries/Maven__ch_qos_logback_logback_core_1_0_10.xml" />
+    <ignored path=".idea/libraries/Maven__com_yammer_dropwizard_dropwizard_core_0_6_2.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_1_4.xml" />
+    <ignored path=".idea/libraries/Maven__joda_time_joda_time_2_2.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_1_4.xml" />
+    <ignored path=".idea/libraries/Maven__asm_asm_3_1.xml" />
+    <ignored path=".idea/libraries/Maven__com_yammer_metrics_metrics_jersey_2_2_0.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_json_provider_2_1_4.xml" />
+    <ignored path=".idea/libraries/Maven__org_eclipse_jetty_orbit_javax_servlet_3_0_0_v201112011016.xml" />
+    <ignored path=".idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_8_1_10_v20130312.xml" />
+    <ignored path=".idea/libraries/Maven__org_hibernate_hibernate_validator_4_3_1_Final.xml" />
+    <ignored path=".idea/libraries/Maven__net_sourceforge_argparse4j_argparse4j_0_4_0.xml" />
+    <ignored path=".idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_10.xml" />
+    <ignored path=".idea/libraries/Maven__com_yammer_metrics_metrics_annotation_2_2_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_eclipse_jetty_jetty_io_8_1_10_v20130312.xml" />
+    <ignored path=".idea/libraries/Maven__org_eclipse_jetty_jetty_security_8_1_10_v20130312.xml" />
+    <ignored path=".idea/libraries/Maven__com_google_guava_guava_14_0_1.xml" />
+    <ignored path=".idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_CR2.xml" />
+    <ignored path=".idea/libraries/Maven__com_yammer_metrics_metrics_servlet_2_2_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_eclipse_jetty_jetty_util_8_1_10_v20130312.xml" />
+    <ignored path=".idea/libraries/Maven__com_google_code_findbugs_jsr305_2_0_1.xml" />
+    <ignored path=".idea/libraries/Maven__com_yammer_metrics_metrics_core_2_2_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_4.xml" />
+    <ignored path=".idea/libraries/Maven__com_sun_jersey_jersey_core_1_8.xml" />
+    <ignored path=".idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_4.xml" />
+    <ignored path=".idea/libraries/Maven__com_sun_jersey_jersey_client_1_8.xml" />
+    <ignored path=".idea/libraries/Maven__org_eclipse_jetty_jetty_http_8_1_10_v20130312.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_1_4.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_1_4.xml" />
+    <ignored path=".idea/libraries/Maven__javax_validation_validation_api_1_0_0_GA.xml" />
+    <ignored path=".idea/libraries/Maven__org_eclipse_jetty_jetty_server_8_1_10_v20130312.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_guava_2_1_2.xml" />
+    <ignored path=".idea/libraries/Maven__org_slf4j_slf4j_api_1_7_4.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_joda_2_1_2.xml" />
     <file path="$PROJECT_DIR$/../../md/sikulitest/pom.xml" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407723900333" ignored="false" />
     <file path="/pom.xml" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407723995294" ignored="false" />
     <file path="/App.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407896096316" ignored="false" />
@@ -45,8 +88,8 @@
     <file path="/TaskBase.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407902466275" ignored="false" />
     <file path="/fragment.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407843503706" ignored="false" />
     <file path="/CreateGroupTaskTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407839730084" ignored="false" />
-    <file path="/TargetsTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407835039716" ignored="false" />
-    <file path="/Dummy.txt" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407910942443" ignored="false" />
+    <file path="/TargetsTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407911898166" ignored="false" />
+    <file path="/Dummy.txt" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407911824961" ignored="false" />
     <file path="/ImageHelper.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407749045050" ignored="false" />
     <file path="$PROJECT_DIR$/../NikePlusRunClub/src/main/resources/i18n/messages_zh_CN.properties" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407752942326" ignored="false" />
     <file path="/ExportNewQRCodeTask.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407773238770" ignored="false" />
@@ -194,46 +237,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CreateGroupTask.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/CreateGroupTask.java">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="40" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+            <state line="18" column="33" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExportQRCodeTask.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeTask.java">
+      <file leaf-file-name="TargetsTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/TargetsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SaveGroupToContactTask.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/SaveGroupToContactTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="70" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scope_settings.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/scopes/scope_settings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskBase.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/TaskBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="0" selection-start="2057" selection-end="2057" vertical-scroll-proportion="0.0">
+            <state line="77" column="25" selection-start="2561" selection-end="2561" vertical-scroll-proportion="1.8393443">
               <folding />
             </state>
           </provider>
@@ -242,18 +258,16 @@
       <file leaf-file-name="Targets.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="49" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.0">
+            <state line="27" column="31" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="42" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
+      <file leaf-file-name="contact_entry.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/target/contact_entry.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -407,9 +421,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportNewQRCodeTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromContactTask.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/TargetsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/CreateGroupTaskTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/client/NRCClientTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/client/NRCClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/Task.java" />
@@ -421,6 +433,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/TaskBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/SaveGroupToContactTask.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/TargetsTest.java" />
       </list>
     </option>
   </component>
@@ -465,6 +479,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -483,10 +499,78 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeChatAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeChatAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeChatAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeChatAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeChatAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeChatAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -494,7 +578,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="OverrideImplement.combined" value="true" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
@@ -507,9 +591,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -566,34 +650,6 @@
       <option name="PACKAGE_NAME" value="com.akqa.automation.task" />
       <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.CreateGroupTaskTest" />
       <option name="METHOD_NAME" value="testExecute" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="NRCClientTest.testUpdateQRCodeLink" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.akqa.automation.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="WeChatAutomation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.akqa.automation.client" />
-      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.client.NRCClientTest" />
-      <option name="METHOD_NAME" value="testUpdateQRCodeLink" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -671,6 +727,34 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="TargetsTest.testLocateContactGroup" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.akqa.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="WeChatAutomation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.akqa.automation" />
+      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.TargetsTest" />
+      <option name="METHOD_NAME" value="testLocateContactGroup" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -683,6 +767,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -711,19 +808,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -765,17 +849,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.ExportQRCodeTaskTest.testExecute" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.CreateGroupTaskTest.testExecute" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.NRCClientTest.testUpdateQRCodeLink" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.NRCClientTest.testAddNewQRCodeLinks" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TargetsTest.testLocateContact" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.NRCClientTest.testAddNewQRCodeLinks" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TargetsTest.testLocateContact" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TargetsTest.testLocateContactGroup" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.TargetsTest.testLocateContact" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ExportQRCodeTaskTest.testExecute" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.NRCClientTest.testAddNewQRCodeLinks" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CreateGroupTaskTest.testExecute" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.NRCClientTest.testUpdateQRCodeLink" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TargetsTest.testLocateContactGroup" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ExportQRCodeTaskTest.testExecute" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.NRCClientTest.testAddNewQRCodeLinks" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CreateGroupTaskTest.testExecute" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -879,14 +963,18 @@
       <created>1407910969498</created>
       <updated>1407910969498</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add new wechat group">
+      <created>1407910976999</created>
+      <updated>1407910976999</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="22" width="1375" height="842" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5401662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53878117" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -904,7 +992,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21444695" sideWeight="0.4598338" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22723852" sideWeight="0.46121883" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32409972" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -982,20 +1070,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="49" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="42" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/SaveGroupToContactTaskTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="11" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" />
@@ -1021,11 +1095,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/TargetsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="50" selection-start="3878" selection-end="3878" vertical-scroll-proportion="0.69740635" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/CreateGroupTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="40" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
@@ -1036,13 +1105,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="42" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="49" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1076,6 +1138,32 @@
     <entry file="file://$PROJECT_DIR$/.idea/scopes/scope_settings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="31" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/target/contact_entry.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="33" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/TargetsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="25" selection-start="2561" selection-end="2561" vertical-scroll-proportion="1.8393443">
           <folding />
         </state>
       </provider>
@@ -1139,6 +1227,18 @@
               <list>
                 <option value="0.2" />
                 <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
