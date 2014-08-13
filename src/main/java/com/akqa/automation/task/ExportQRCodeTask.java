@@ -3,6 +3,8 @@ package com.akqa.automation.task;
 import com.akqa.automation.Targets;
 import com.akqa.automation.client.NRCClient;
 import com.akqa.automation.qrcode.ImageHelper;
+import org.sikuli.api.Relative;
+import org.sikuli.api.ScreenLocation;
 import org.sikuli.api.ScreenRegion;
 import org.sikuli.api.robot.Key;
 
@@ -42,6 +44,16 @@ public class ExportQRCodeTask extends TaskBase {
 
             try {
                 clickTarget(Targets.groupEntry, LONG_WAIT_TIMEOUT);
+                clickTarget(Targets.groupMemberSummary, LONGER_WAIT_TIMEOUT);
+                ScreenRegion home = mainScreenRegion.find(Targets.home);
+                ScreenLocation bottom = home.getRelativeScreenLocation(20, -60);
+                ScreenLocation top = Relative.to(bottom).above(500).getScreenLocation();
+                mouse.drag(bottom);
+                mouse.drop(top);
+                mouse.wheel(1, 40);
+                System.out.println("Reach the bottom.");
+                mouse.drag(top);
+                mouse.drop(Relative.to(top).below(250).getScreenLocation());
                 clickTarget(Targets.groupQrCodeEntry, LONG_WAIT_TIMEOUT);
                 ScreenRegion qrCode = mainScreenRegion.wait(Targets.qrCodeCorner, LONGER_WAIT_TIMEOUT);
                 if (qrCode != null) {

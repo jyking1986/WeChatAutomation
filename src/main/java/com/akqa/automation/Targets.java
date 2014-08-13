@@ -33,7 +33,9 @@ public final class Targets {
 
     private static Target constructTarget(final String resourceName) {
         URL imageURL = App.class.getResource(String.format(RESOURCE_PATH_FORMAT, resourceName));
-        return new ImageTarget(imageURL);
+        ImageTarget imageTarget = new ImageTarget(imageURL);
+        imageTarget.setMinScore(0.85);
+        return imageTarget;
     }
 
 }

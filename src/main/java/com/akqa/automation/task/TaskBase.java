@@ -48,13 +48,13 @@ public abstract class TaskBase implements Task {
         int retry = 5;
         while (homeRegion == null && retry > 0) {
             retry--;
-            clickTarget(Targets.wechatNav, LONG_WAIT_TIMEOUT);
+            clickTarget(Targets.wechatNav, SHORT_WAIT_TIMEOUT);
             homeRegion = mainScreenRegion.wait(Targets.chatTab, LONG_WAIT_TIMEOUT);
         }
 
         checkNotNull(homeRegion);
 
-        System.out.println("backing home");
+        System.out.println("backing home.");
         return homeRegion;
     }
 

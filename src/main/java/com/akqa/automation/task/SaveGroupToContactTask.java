@@ -29,6 +29,7 @@ public class SaveGroupToContactTask extends TaskBase {
         mouse.click(chatTab.getCenter());
         mouse.doubleClick(chatTab.getCenter());
         mouse.click(chatTab.getRelativeScreenLocation(300, 70));
+
         mouse.click(mainScreenRegion.find(Targets.wechatNav).getCenter());
         for (int i = 0; i < count; i++) {
             keyboard.type(Key.DOWN + Key.DOWN);
@@ -37,14 +38,13 @@ public class SaveGroupToContactTask extends TaskBase {
             try {
                 clickTarget(Targets.groupEntry, LONGER_WAIT_TIMEOUT);
                 clickTarget(Targets.groupMemberSummary, LONGER_WAIT_TIMEOUT);
-                System.out.println("Located target: groupMemberSummary");
                 ScreenRegion home = mainScreenRegion.find(Targets.home);
-                ScreenLocation from = home.getRelativeScreenLocation(20, -60);
-                ScreenLocation to = Relative.to(from).above(500).getScreenLocation();
-                mouse.drag(from);
-                mouse.drop(to);
-                mouse.wheel(1, 100);
-                ScreenRegion contact = mainScreenRegion.wait(Targets.contactNotSaved, LONG_WAIT_TIMEOUT);
+                ScreenLocation bottom = home.getRelativeScreenLocation(20, -60);
+                ScreenLocation top = Relative.to(bottom).above(500).getScreenLocation();
+                mouse.drag(bottom);
+                mouse.drop(top);
+                mouse.wheel(1, 30);
+                ScreenRegion contact = mainScreenRegion.wait(Targets.contactNotSaved, SHORT_WAIT_TIMEOUT);
                 mouse.doubleClick(contact.getRelativeScreenLocation(1200, 25));
             } catch (Exception e) {
                 System.out.println("Not a group.");
