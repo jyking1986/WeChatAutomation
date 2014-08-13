@@ -28,7 +28,9 @@ public class App {
 
     public static void main(String[] args) {
         Map<String, Task> taskMap = new HashMap<>();
-        NRCClient nrcClient = new NRCClient("114.215.189.62");
+        String server = "runclub.nike.com.cn";//uat"114.215.189.62";
+
+        NRCClient nrcClient = new NRCClient(server);
         Task createGroupTask = new CreateGroupTask(5, nrcClient);
         taskMap.put(createGroupTask.getName(), createGroupTask);
         Task exportQRCodeTask = new ExportQRCodeTask(nrcClient, 40);
