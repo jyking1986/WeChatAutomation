@@ -37,7 +37,7 @@ public class ExportQRCodeTask extends TaskBase {
         mouse.doubleClick(chatTab.getCenter());
         mouse.click(chatTab.getRelativeScreenLocation(300, 70));
         mouse.click(mainScreenRegion.find(Targets.wechatNav).getCenter());
-        java.util.List<String> links = new ArrayList<>();
+
         for (int i = 0; i < count; i++) {
             keyboard.type(Key.DOWN + Key.DOWN);
             keyboard.type(Key.ENTER);
@@ -67,11 +67,13 @@ public class ExportQRCodeTask extends TaskBase {
                 clickTarget(Targets.groupQrCodeEntry, LONG_WAIT_TIMEOUT);
                 ScreenRegion qrCode = mainScreenRegion.wait(Targets.qrCodeCorner, LONGER_WAIT_TIMEOUT);
                 if (qrCode != null) {
-                    System.out.println(String.format("Generating the %s .", links.size()));
                     Rectangle bounds = qrCode.getBounds();
                     BufferedImage capture = mainScreenRegion.getScreen().getScreenshot(bounds.x, bounds.y, QR_CODE_WIDTH, QR_CODE_HEIGHT);
                     try {
+                        java.util.List<String> links = new ArrayList<>();
                         links.add(ImageHelper.extractContentFromQRCode(capture));
+                        nrcClient.refreshQRCodeLinks(links);
+                        System.out.println(String.format("Refresh WeChat Group QR Code."));
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
                     }
@@ -82,17 +84,8 @@ public class ExportQRCodeTask extends TaskBase {
 
             backHome();
 
-            if (links.size() > 5) {
-                System.out.println(String.format("Refresh %s WeChat Group QR Code.", links.size()));
-                nrcClient.refreshQRCodeLinks(links);
-                links.clear();
-            }
         }
 
-        System.out.println(String.format("Refresh %s WeChat Group QR Code.", links.size()));
-        if (links.size() > 0) {
-            nrcClient.refreshQRCodeLinks(links);
-        }
     }
 
 
