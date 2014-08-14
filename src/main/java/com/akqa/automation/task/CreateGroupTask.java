@@ -8,7 +8,6 @@ import org.sikuli.api.ScreenRegion;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -28,24 +27,32 @@ public class CreateGroupTask extends TaskBase {
 
     @Override
     public void execute() {
+        int i = 0;
+        while (i < groupCount) {
 
-        for (int i = 0; i < groupCount; i++) {
-            backHome();
+            try {
+                backHome();
+                clickTarget(Targets.create, SHORT_WAIT_TIMEOUT);
+                clickTarget(Targets.createGroup, LONG_WAIT_TIMEOUT);
+                clickTarget(Targets.createGroupFlag, LONGER_WAIT_TIMEOUT);
+                int tryLimit = 5;
+                while (mainScreenRegion.wait(Targets.firstSelect, LONG_WAIT_TIMEOUT) == null) {
+                    clickTarget(Targets.user1Snapshot, LONG_WAIT_TIMEOUT);
+                    if (tryLimit-- < 0) {
+                        break;
+                    }
+                }
+                tryLimit = 5;
+                while (mainScreenRegion.wait(Targets.select2User, LONG_WAIT_TIMEOUT) == null) {
+                    clickTarget(Targets.user2Snapshot, LONG_WAIT_TIMEOUT);
+                    if (tryLimit-- < 0) {
+                        break;
+                    }
+                }
 
-            clickTarget(Targets.create, SHORT_WAIT_TIMEOUT);
-            clickTarget(Targets.createGroup, LONG_WAIT_TIMEOUT);
-
-            mainScreenRegion.wait(Targets.robot, LONG_WAIT_TIMEOUT);
-            List<ScreenRegion> robot = mainScreenRegion.findAll(Targets.robot);
-            for (ScreenRegion screenRegion : robot) {
-                mouse.click(screenRegion.getCenter());
-            }
-
-            ScreenRegion confirmSelect2User = mainScreenRegion.wait(Targets.select2User, LONG_WAIT_TIMEOUT);
-            if (confirmSelect2User != null) {
                 clickTarget(Targets.confirmGroupCreation, SHORT_WAIT_TIMEOUT);
                 System.out.println(String.format("%s Creating WeChat group", i));
-                clickTarget(Targets.groupEntry, LONG_WAIT_TIMEOUT);
+                clickTarget(Targets.groupEntry, LONGER_WAIT_TIMEOUT);
                 ScreenRegion contact = mainScreenRegion.wait(Targets.contactNotSaved, LONG_WAIT_TIMEOUT);
                 if (contact != null) {
                     mouse.doubleClick(contact.getRelativeScreenLocation(1200, 25));
@@ -60,12 +67,15 @@ public class CreateGroupTask extends TaskBase {
                         java.util.List<String> links = new ArrayList<>();
                         links.add(ImageHelper.extractContentFromQRCode(capture));
                         nrcClient.addNewQRCodeLinks(links);
-
+                        i++;
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
                     }
                 }
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
             }
+
 
         }
 

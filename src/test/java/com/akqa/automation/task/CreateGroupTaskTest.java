@@ -17,7 +17,7 @@ public class CreateGroupTaskTest {
         String server = "runclub.nike.com.cn";
 //        String server = "114.215.189.62";
         NRCClient nrcClient = new NRCClient(server);
-        CreateGroupTask createGroupTask = new CreateGroupTask(10, nrcClient);
+        CreateGroupTask createGroupTask = new CreateGroupTask(100, nrcClient);
         createGroupTask.execute();
     }
 }

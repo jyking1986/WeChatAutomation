@@ -15,6 +15,7 @@ public final class Targets {
     public static final Target home = constructTarget("home");
     public static final Target create = constructTarget("create");
     public static final Target select2User = constructTarget("2_user_be_selected");
+    public static final Target firstSelect = constructTarget("first_select");
     public static final Target confirmGroupCreation = constructTarget("confirm_group_creation");
     public static final Target createGroup = constructTarget("create_group");
     public static final Target groupEntry = constructTarget("group_entry");
@@ -30,13 +31,15 @@ public final class Targets {
     public static final Target contactGroupEntry = constructTarget("contact_group_entry");
     public static final Target groupMemberSummary = constructTarget("group_member_summary");
     public static final Target notRefreshFlag = constructTarget("not_refresh_flag");
-    public static final Target robot = constructTarget("robot");
+    public static final Target robot = constructTarget("robot3");
+    public static final Target robot2 = constructTarget("robot2");
+    public static final Target createGroupFlag = constructTarget("create_group_flag1");
     private static final String RESOURCE_PATH_FORMAT = "/target/%s.png";
 
     private static Target constructTarget(final String resourceName) {
         URL imageURL = App.class.getResource(String.format(RESOURCE_PATH_FORMAT, resourceName));
         ImageTarget imageTarget = new ImageTarget(imageURL);
-        imageTarget.setMinScore(0.9);
+        imageTarget.setMinScore(0.88);
         return imageTarget;
     }
 
