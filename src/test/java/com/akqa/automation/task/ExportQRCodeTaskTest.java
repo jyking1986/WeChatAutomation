@@ -22,9 +22,10 @@ public class ExportQRCodeTaskTest extends TaskBase {
     @Test
     @Ignore
     public void testExecute() throws Exception {
-        String server = "runclub.nike.com.cn";//"114.215.189.62";
+        String server = "runclub.nike.com.cn";
+//        String server = "114.215.189.62";
         NRCClient nrcClient = new NRCClient(server);
-        ExportQRCodeTask exportQRCodeTask = new ExportQRCodeTask(nrcClient, 2);
+        ExportQRCodeTask exportQRCodeTask = new ExportQRCodeTask(nrcClient, 5);
         exportQRCodeTask.execute();
     }
 

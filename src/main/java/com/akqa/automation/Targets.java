@@ -29,12 +29,14 @@ public final class Targets {
     public static final Target contactEntry = constructTarget("contact_entry");
     public static final Target contactGroupEntry = constructTarget("contact_group_entry");
     public static final Target groupMemberSummary = constructTarget("group_member_summary");
+    public static final Target notRefreshFlag = constructTarget("not_refresh_flag");
+    public static final Target robot = constructTarget("robot");
     private static final String RESOURCE_PATH_FORMAT = "/target/%s.png";
 
     private static Target constructTarget(final String resourceName) {
         URL imageURL = App.class.getResource(String.format(RESOURCE_PATH_FORMAT, resourceName));
         ImageTarget imageTarget = new ImageTarget(imageURL);
-        imageTarget.setMinScore(0.85);
+        imageTarget.setMinScore(0.9);
         return imageTarget;
     }
 

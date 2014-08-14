@@ -52,6 +52,16 @@ public class ExportQRCodeTask extends TaskBase {
                 mouse.drop(top);
                 mouse.wheel(1, 40);
                 System.out.println("Reach the bottom.");
+
+                ScreenRegion contact = mainScreenRegion.wait(Targets.notRefreshFlag, SHORT_WAIT_TIMEOUT);
+                if (contact == null) {
+                    System.out.println("Group QR code already be refreshed.");
+                    backHome();
+                    continue;
+                } else {
+                    mouse.doubleClick(contact.getRelativeScreenLocation(1200, 25));
+                }
+
                 mouse.drag(top);
                 mouse.drop(Relative.to(top).below(250).getScreenLocation());
                 clickTarget(Targets.groupQrCodeEntry, LONG_WAIT_TIMEOUT);
@@ -84,4 +94,6 @@ public class ExportQRCodeTask extends TaskBase {
             nrcClient.refreshQRCodeLinks(links);
         }
     }
+
+
 }

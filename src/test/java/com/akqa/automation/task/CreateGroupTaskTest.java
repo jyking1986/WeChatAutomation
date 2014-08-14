@@ -14,8 +14,10 @@ public class CreateGroupTaskTest {
     @Test
     @Ignore
     public void testExecute() throws Exception {
-        NRCClient nrcClient = new NRCClient("localhost:8080");
-        CreateGroupTask createGroupTask = new CreateGroupTask(2, nrcClient);
+        String server = "runclub.nike.com.cn";
+//        String server = "114.215.189.62";
+        NRCClient nrcClient = new NRCClient(server);
+        CreateGroupTask createGroupTask = new CreateGroupTask(10, nrcClient);
         createGroupTask.execute();
     }
 }

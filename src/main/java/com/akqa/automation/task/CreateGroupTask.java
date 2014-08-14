@@ -8,6 +8,7 @@ import org.sikuli.api.ScreenRegion;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -27,23 +28,27 @@ public class CreateGroupTask extends TaskBase {
 
     @Override
     public void execute() {
-        java.util.List<String> links = new ArrayList<>();
+
         for (int i = 0; i < groupCount; i++) {
             backHome();
 
             clickTarget(Targets.create, SHORT_WAIT_TIMEOUT);
             clickTarget(Targets.createGroup, LONG_WAIT_TIMEOUT);
-            clickTarget(Targets.user1Snapshot, LONG_WAIT_TIMEOUT);
-            clickTarget(Targets.user2Snapshot, LONG_WAIT_TIMEOUT);
 
-            ScreenRegion confirmSelect2User = mainScreenRegion.wait(Targets.select2User, SHORT_WAIT_TIMEOUT);
+            mainScreenRegion.wait(Targets.robot, LONG_WAIT_TIMEOUT);
+            List<ScreenRegion> robot = mainScreenRegion.findAll(Targets.robot);
+            for (ScreenRegion screenRegion : robot) {
+                mouse.click(screenRegion.getCenter());
+            }
+
+            ScreenRegion confirmSelect2User = mainScreenRegion.wait(Targets.select2User, LONG_WAIT_TIMEOUT);
             if (confirmSelect2User != null) {
                 clickTarget(Targets.confirmGroupCreation, SHORT_WAIT_TIMEOUT);
                 System.out.println(String.format("%s Creating WeChat group", i));
                 clickTarget(Targets.groupEntry, LONG_WAIT_TIMEOUT);
                 ScreenRegion contact = mainScreenRegion.wait(Targets.contactNotSaved, LONG_WAIT_TIMEOUT);
                 if (contact != null) {
-                    mouse.doubleClick(contact.getRelativeScreenLocation(1200, 20));
+                    mouse.doubleClick(contact.getRelativeScreenLocation(1200, 25));
                 }
                 clickTarget(Targets.groupQrCodeEntry, LONG_WAIT_TIMEOUT);
                 ScreenRegion qrCode = mainScreenRegion.wait(Targets.qrCodeCorner, LONGER_WAIT_TIMEOUT);
@@ -52,19 +57,16 @@ public class CreateGroupTask extends TaskBase {
                     BufferedImage capture = mainScreenRegion.getScreen().getScreenshot(bounds.x, bounds.y, QR_CODE_WIDTH, QR_CODE_HEIGHT);
                     try {
                         System.out.println(String.format("%s Generating WeChat group", i));
+                        java.util.List<String> links = new ArrayList<>();
                         links.add(ImageHelper.extractContentFromQRCode(capture));
+                        nrcClient.addNewQRCodeLinks(links);
+
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
                     }
                 }
             }
 
-        }
-
-        System.out.println(String.format("Currently generate %s new WeChat Group, expected %s", links.size(), groupCount));
-
-        if (links.size() > 0) {
-            nrcClient.addNewQRCodeLinks(links);
         }
 
     }
