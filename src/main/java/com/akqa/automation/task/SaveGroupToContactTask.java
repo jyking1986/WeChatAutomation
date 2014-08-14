@@ -29,29 +29,46 @@ public class SaveGroupToContactTask extends TaskBase {
         mouse.click(chatTab.getCenter());
         mouse.doubleClick(chatTab.getCenter());
         mouse.click(chatTab.getRelativeScreenLocation(300, 70));
-
         mouse.click(mainScreenRegion.find(Targets.wechatNav).getCenter());
-        for (int i = 0; i < count; i++) {
+
+        int i = 0;
+        while (i < count) {
             keyboard.type(Key.DOWN + Key.DOWN);
             keyboard.type(Key.ENTER);
 
-            try {
-                clickTarget(Targets.groupEntry, LONGER_WAIT_TIMEOUT);
-                clickTarget(Targets.groupMemberSummary, LONGER_WAIT_TIMEOUT);
-                ScreenRegion home = mainScreenRegion.find(Targets.home);
-                ScreenLocation bottom = home.getRelativeScreenLocation(20, -60);
-                ScreenLocation top = Relative.to(bottom).above(500).getScreenLocation();
-                mouse.drag(bottom);
-                mouse.drop(top);
-                mouse.wheel(1, 30);
-                ScreenRegion contact = mainScreenRegion.wait(Targets.contactNotSaved, SHORT_WAIT_TIMEOUT);
-                mouse.doubleClick(contact.getRelativeScreenLocation(1200, 25));
-            } catch (Exception e) {
-                System.out.println("Not a group.");
-                e.printStackTrace(System.err);
+            if (executeImp()) {
+                i++;
             }
 
             backHome();
+        }
+    }
+
+    private boolean executeImp() {
+        try {
+            clickTarget(Targets.groupEntry, LONGER_WAIT_TIMEOUT);
+            clickTarget(Targets.groupMemberSummary, LONGER_WAIT_TIMEOUT);
+            ScreenRegion home = mainScreenRegion.find(Targets.home);
+            ScreenLocation bottom = home.getRelativeScreenLocation(20, -60);
+            ScreenLocation top = Relative.to(bottom).above(500).getScreenLocation();
+            mouse.drag(bottom);
+            mouse.drop(top);
+            mouse.wheel(1, 30);
+            ScreenRegion contact = mainScreenRegion.wait(Targets.contactNotSaved, SHORT_WAIT_TIMEOUT);
+            if (contact != null) {
+                mouse.doubleClick(contact.getRelativeScreenLocation(1200, 25));
+                System.out.println("Group be saved.");
+            } else {
+                System.out.println("Already be saved.");
+            }
+            return true;
+        } catch (Exception e) {
+            System.out.println("Not a group." + e.getMessage());
+            ScreenRegion error = mainScreenRegion.wait(Targets.notResponseError, LONG_WAIT_TIMEOUT);
+            if (error != null) {
+                clickTarget(Targets.wait, LONG_WAIT_TIMEOUT);
+            }
+            return false;
         }
     }
 }

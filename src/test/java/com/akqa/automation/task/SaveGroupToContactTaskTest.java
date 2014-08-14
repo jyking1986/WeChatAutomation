@@ -21,7 +21,7 @@ public class SaveGroupToContactTaskTest extends TaskBase {
     @Test
     @Ignore
     public void testExecute() throws Exception {
-        SaveGroupToContactTask saveGroupToContactTask = new SaveGroupToContactTask(200);
+        SaveGroupToContactTask saveGroupToContactTask = new SaveGroupToContactTask(400);
         saveGroupToContactTask.execute();
     }
 

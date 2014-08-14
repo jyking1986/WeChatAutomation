@@ -34,6 +34,8 @@ public final class Targets {
     public static final Target robot = constructTarget("robot3");
     public static final Target robot2 = constructTarget("robot2");
     public static final Target createGroupFlag = constructTarget("create_group_flag1");
+    public static final Target notResponseError = constructTarget("not_response_error");
+    public static final Target wait = constructTarget("wait");
     private static final String RESOURCE_PATH_FORMAT = "/target/%s.png";
 
     private static Target constructTarget(final String resourceName) {
