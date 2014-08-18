@@ -77,7 +77,7 @@ public class ExportQRCodeFromContactTask extends TaskBase {
         if (groupEntry != null) {
             mouse.doubleClick(groupEntry.getCenter());
         } else {
-            System.out.println("exportQRCode: Error in open group detail.");
+            System.out.println("saveContact: Error in open group detail.");
         }
         ScreenRegion chatInformation = mainScreenRegion.wait(Targets.chatInformation, LONGER_WAIT_TIMEOUT);
         mouse.click(chatInformation.getRelativeScreenLocation(10, 60));
@@ -108,7 +108,7 @@ public class ExportQRCodeFromContactTask extends TaskBase {
                 }
             }
         } else {
-            System.out.println("exportQRCode: failed to locate qr code entry button.");
+            System.out.println("saveContact: failed to locate qr code entry button.");
         }
 
         return false;

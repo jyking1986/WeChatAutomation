@@ -27,7 +27,7 @@ public abstract class TaskBase implements Task {
     protected final static int QR_CODE_WIDTH = 200;
     protected final static int QR_CODE_HEIGHT = 200;
     protected final static int SHORT_WAIT_TIMEOUT = 1000;
-    protected final static int LONG_WAIT_TIMEOUT = 3000;
+    protected final static int LONG_WAIT_TIMEOUT = 2000;
     protected final static int LONGER_WAIT_TIMEOUT = 8000;
     protected final ScreenRegion mainScreenRegion = new DesktopScreenRegion();
     protected final Mouse mouse = new DesktopMouse();
