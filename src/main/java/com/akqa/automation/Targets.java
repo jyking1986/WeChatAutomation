@@ -35,6 +35,9 @@ public final class Targets {
     public static final Target robot2 = constructTarget("robot2");
     public static final Target createGroupFlag = constructTarget("create_group_flag1");
     public static final Target notResponseError = constructTarget("not_response_error");
+    public static final Target chooseAGroup = constructTarget("choose_a_group");
+    public static final Target startAGroupConvesation = constructTarget("start_a_group_convesation");
+    public static final Target groupContactList = constructTarget("group_contact_list");
     public static final Target wait = constructTarget("wait");
     private static final String RESOURCE_PATH_FORMAT = "/target/%s.png";
 
