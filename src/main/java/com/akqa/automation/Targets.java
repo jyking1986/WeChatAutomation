@@ -39,6 +39,10 @@ public final class Targets {
     public static final Target startAGroupConvesation = constructTarget("start_a_group_convesation");
     public static final Target groupContactList = constructTarget("group_contact_list");
     public static final Target wait = constructTarget("wait");
+    public static final Target enterGroup = constructTarget("enter_group");
+    public static final Target groupDetail = constructTarget("group_detail");
+    public static final Target chatInformation = constructTarget("chat_information");
+    public static final Target mainScreen = constructTarget("main_screen");
     private static final String RESOURCE_PATH_FORMAT = "/target/%s.png";
 
     private static Target constructTarget(final String resourceName) {
