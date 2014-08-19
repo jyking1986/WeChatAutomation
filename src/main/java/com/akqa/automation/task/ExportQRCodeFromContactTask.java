@@ -29,7 +29,7 @@ public class ExportQRCodeFromContactTask extends TaskBase {
 
     @Override
     public void execute() {
-        int i = 1;
+        int i = 66;
         while (i <= groupCount) {
 
             try {
@@ -121,6 +121,10 @@ public class ExportQRCodeFromContactTask extends TaskBase {
         ScreenRegion enterGroup = mainScreenRegion.wait(Targets.enterGroup, SHORT_WAIT_TIMEOUT);
         int tryLimit = 5;
         while (enterGroup == null && tryLimit-- > 0) {
+            ScreenRegion home = mainScreenRegion.find(Targets.home);
+            ScreenLocation bottom = home.getRelativeScreenLocation(20, -60);
+            mouse.drag(bottom);
+            mouse.drop(Relative.to(bottom).above(250).getScreenLocation());
             mouse.wheel(1, 10);
             enterGroup = mainScreenRegion.wait(Targets.enterGroup, SHORT_WAIT_TIMEOUT);
         }
@@ -137,7 +141,7 @@ public class ExportQRCodeFromContactTask extends TaskBase {
         locatePage(index, startConversation);
         int i = index % 7;
         i = (i == 0 ? 7 : i);
-        mouse.click(startConversation.getRelativeScreenLocation(300, i * 52 + 56));
+        mouse.doubleClick(startConversation.getRelativeScreenLocation(300, i * 52 + 56));
     }
 
     protected void locatePage(int index, ScreenRegion startConversation) throws InterruptedException {
