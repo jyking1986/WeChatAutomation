@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30491cfe-6136-47d8-b0c5-9a2620e40b7b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromContactTask.java" afterPath="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromContactTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromContactTaskTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromContactTaskTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/SaveGroupToContactTask.java" afterPath="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/SaveGroupToContactTask.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/SaveGroupToContactTaskTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/SaveGroupToContactTaskTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -89,7 +88,7 @@
     <file path="/fragment.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408328712770" ignored="false" />
     <file path="/CreateGroupTaskTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407839730084" ignored="false" />
     <file path="/TargetsTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407921658937" ignored="false" />
-    <file path="/Dummy.txt" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408364554791" ignored="false" />
+    <file path="/Dummy.txt" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408414953950" ignored="false" />
     <file path="/ImageHelper.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407749045050" ignored="false" />
     <file path="$PROJECT_DIR$/../NikePlusRunClub/src/main/resources/i18n/messages_zh_CN.properties" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407752942326" ignored="false" />
     <file path="/ExportNewQRCodeTask.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407773238770" ignored="false" />
@@ -139,7 +138,7 @@
     <file path="$PROJECT_DIR$/../NikePlusRunClub/src/main/java/com/nike/nikeplusrunclub/dao/MassMessageStatsMapper.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407825579728" ignored="false" />
     <file path="/a.dummy" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407846683635" ignored="false" />
     <file path="/SaveGroupToContactTaskTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407915980440" ignored="false" />
-    <file path="/SaveGroupToContactTask.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408364475779" ignored="false" />
+    <file path="/SaveGroupToContactTask.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408499498836" ignored="false" />
     <file path="/ExportQRCodeTask.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408000170790" ignored="false" />
     <file path="/ExportQRCodeTaskTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408000263024" ignored="false" />
     <file path="$PROJECT_DIR$/../NikePlusRunClub/src/main/java/com/nike/nikeplusrunclub/resources/SocialGroupResource.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407849108665" ignored="false" />
@@ -238,19 +237,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CreateGroupTask.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/CreateGroupTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="47" selection-start="2173" selection-end="2173" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExportQRCodeFromContactTask.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ExportQRCodeFromContactTask.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromContactTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="53" selection-start="5246" selection-end="5246" vertical-scroll-proportion="6.617647">
+            <state line="13" column="35" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -258,19 +248,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExportQRCodeFromContactTaskTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromContactTaskTest.java">
+      <file leaf-file-name="ExportQRCodeTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="50" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.0">
+            <state line="41" column="44" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateGroupTaskTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/CreateGroupTaskTest.java">
+      <file leaf-file-name="SaveGroupToContactTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/SaveGroupToContactTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="25" selection-start="354" selection-end="373" vertical-scroll-proportion="0.0">
+            <state line="59" column="59" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SaveGroupToContactTaskTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/SaveGroupToContactTaskTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="23" selection-start="495" selection-end="495" vertical-scroll-proportion="0.8333333">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskBase.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/TaskBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="54" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -441,10 +449,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/CreateGroupTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/TaskBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/SaveGroupToContactTask.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/SaveGroupToContactTaskTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromContactTaskTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromContactTask.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/SaveGroupToContactTaskTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/SaveGroupToContactTask.java" />
       </list>
     </option>
   </component>
@@ -719,7 +727,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/target" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExportQRCodeFromContactTaskTest.testExecute">
+  <component name="RunManager" selected="JUnit.SaveGroupToContactTaskTest.testExecute">
     <configuration default="false" name="ExportQRCodeFromContactTaskTest.testExportGroup" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -960,8 +968,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromContactTaskTest.testExecute" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SaveGroupToContactTaskTest.testExecute" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SaveGroupToContactTaskTest.testExecute" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromContactTaskTest.testExecute" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromContactTaskTest.testExportQRCode" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromContactTaskTest.testEnterGroup" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromContactTaskTest.testExportGroup" />
@@ -1120,7 +1128,15 @@
       <created>1408364558620</created>
       <updated>1408364558620</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="add new wechat group">
+      <created>1408414909497</created>
+      <updated>1408414909498</updated>
+    </task>
+    <task id="LOCAL-00033" summary="add new wechat group">
+      <created>1408414955826</created>
+      <updated>1408414955826</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1146,7 +1162,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17005268" sideWeight="0.46260387" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17080511" sideWeight="0.46260387" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33933517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1269,34 +1285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/TaskBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="26" selection-start="1397" selection-end="1409" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/SaveGroupToContactTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="41" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/SaveGroupToContactTaskTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="22" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="50" selection-start="3030" selection-end="3030" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/CreateGroupTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="72" column="47" selection-start="2173" selection-end="2173" vertical-scroll-proportion="0.0">
@@ -1318,12 +1306,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="44" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromContactTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="53" selection-start="5246" selection-end="5246" vertical-scroll-proportion="6.617647">
+        <state line="13" column="35" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/SaveGroupToContactTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="59" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/TaskBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="54" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/SaveGroupToContactTaskTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="23" selection-start="495" selection-end="495" vertical-scroll-proportion="0.8333333">
+          <folding />
         </state>
       </provider>
     </entry>

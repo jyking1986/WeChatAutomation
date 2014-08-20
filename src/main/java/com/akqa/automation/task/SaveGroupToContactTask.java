@@ -58,7 +58,7 @@ public class SaveGroupToContactTask extends TaskBase {
         try {
             clickTarget(Targets.groupEntry, LONGER_WAIT_TIMEOUT);
             clickTarget(Targets.groupMemberSummary, LONGER_WAIT_TIMEOUT);
-            ScreenRegion contact = mainScreenRegion.wait(Targets.contactNotSaved, SHORT_WAIT_TIMEOUT);
+            ScreenRegion contact = mainScreenRegion.wait(Targets.contactNotSaved, LONG_WAIT_TIMEOUT);
             if (contact == null) {
                 ScreenRegion home = mainScreenRegion.find(Targets.home);
                 ScreenLocation bottom = home.getRelativeScreenLocation(20, -60);
@@ -66,7 +66,7 @@ public class SaveGroupToContactTask extends TaskBase {
                 mouse.drag(bottom);
                 mouse.drop(top);
                 mouse.wheel(1, 30);
-                contact = mainScreenRegion.wait(Targets.contactNotSaved, SHORT_WAIT_TIMEOUT);
+                contact = mainScreenRegion.wait(Targets.contactNotSaved, LONG_WAIT_TIMEOUT);
             }
 
             if (contact != null) {
