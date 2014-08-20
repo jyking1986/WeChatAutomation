@@ -1,10 +1,7 @@
 package com.akqa.automation;
 
 import com.akqa.automation.client.NRCClient;
-import com.akqa.automation.task.CreateGroupTask;
-import com.akqa.automation.task.ExportQRCodeTask;
-import com.akqa.automation.task.SaveGroupToContactTask;
-import com.akqa.automation.task.Task;
+import com.akqa.automation.task.*;
 import org.sikuli.api.DesktopScreenRegion;
 import org.sikuli.api.ImageTarget;
 import org.sikuli.api.ScreenRegion;
@@ -33,10 +30,13 @@ public class App {
         NRCClient nrcClient = new NRCClient(server);
         Task createGroupTask = new CreateGroupTask(5, nrcClient);
         taskMap.put(createGroupTask.getName(), createGroupTask);
-        Task exportQRCodeTask = new ExportQRCodeTask(nrcClient, 400);
+        Task exportQRCodeTask = new ExportQRCodeTask(nrcClient, 1700);
         taskMap.put(exportQRCodeTask.getName(), exportQRCodeTask);
-        Task saveGroupToContactTask = new SaveGroupToContactTask(400);
+        Task saveGroupToContactTask = new SaveGroupToContactTask(1700);
         taskMap.put(saveGroupToContactTask.getName(), saveGroupToContactTask);
+
+        Task task = new ExportQRCodeFromContactTask(1700, nrcClient);
+        taskMap.put(task.getName(), task);
 
         if (args.length < 1) {
             System.out.println("Only Support the following commands:");

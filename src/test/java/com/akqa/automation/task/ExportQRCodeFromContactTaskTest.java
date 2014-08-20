@@ -34,7 +34,7 @@ public class ExportQRCodeFromContactTaskTest {
 //        String server = "114.215.189.62";
         String server = "runclub.nike.com.cn";
         NRCClient nrcClient = new NRCClient(server);
-        task = new ExportQRCodeFromContactTask(220, nrcClient);
+        task = new ExportQRCodeFromContactTask(1700, nrcClient);
     }
 
     @Test
