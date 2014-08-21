@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30491cfe-6136-47d8-b0c5-9a2620e40b7b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromContactTask.java" afterPath="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromContactTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/confirm_group_contact_list.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/confirm_group_contact_snapshot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/confirm_group_detail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/confirm_qr_code_detail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/enter_group_button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/group_contact_entry.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/group_detail_entry_button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/main_nav.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/qr_code_bar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/qr_code_corner.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/save_to_contact_bar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/wechat_nav.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromGenyMotion.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromGenyMotionTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/akqa/automation/client/NRCClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/akqa/automation/client/NRCClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java" afterPath="$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WeChatAutomation.iws" />
@@ -80,14 +95,14 @@
     <file path="$PROJECT_DIR$/../../md/sikulitest/pom.xml" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407723900333" ignored="false" />
     <file path="/pom.xml" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407723995294" ignored="false" />
     <file path="/App.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407936105259" ignored="false" />
-    <file path="/Targets.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408361130566" ignored="false" />
+    <file path="/Targets.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408614932149" ignored="false" />
     <file path="/Task.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407847822256" ignored="false" />
     <file path="/CreateGroupTask.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408022155784" ignored="false" />
     <file path="/TaskBase.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407932808551" ignored="false" />
-    <file path="/fragment.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408328712770" ignored="false" />
+    <file path="/fragment.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408617105179" ignored="false" />
     <file path="/CreateGroupTaskTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407839730084" ignored="false" />
     <file path="/TargetsTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407921658937" ignored="false" />
-    <file path="/Dummy.txt" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408613242416" ignored="false" />
+    <file path="/Dummy.txt" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408614016289" ignored="false" />
     <file path="/ImageHelper.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407749045050" ignored="false" />
     <file path="$PROJECT_DIR$/../NikePlusRunClub/src/main/resources/i18n/messages_zh_CN.properties" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407752942326" ignored="false" />
     <file path="/ExportNewQRCodeTask.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407773238770" ignored="false" />
@@ -165,7 +180,7 @@
     <file path="/DEV_config.yml" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407836781355" ignored="false" />
     <file path="$PROJECT_DIR$/../NikePlusRunClub/src/test/java/com/nike/nikeplusrunclub/resources/SocialGroupResourceTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407849108664" ignored="false" />
     <file path="/SocialGroupResourceTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407837981350" ignored="false" />
-    <file path="/NRCClient.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407841924368" ignored="false" />
+    <file path="/NRCClient.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408620862254" ignored="false" />
     <file path="/NRCClientTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407840585866" ignored="false" />
     <file path="/RunClubService.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407841110298" ignored="false" />
     <file path="/CrewResource.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407841134316" ignored="false" />
@@ -176,6 +191,8 @@
     <file path="$PROJECT_DIR$/../NikePlusRunClub/src/main/java/com/nike/nikeplusrunclub/dao/UnMappedCrewMapper.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407846777356" ignored="false" />
     <file path="$PROJECT_DIR$/../NikePlusRunClub/src/main/java/com/nike/nikeplusrunclub/model/crewtools/MapCrewRequest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407849108664" ignored="false" />
     <file path="/ExportQRCodeFromContactTaskTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408360978237" ignored="false" />
+    <file path="/ExportQRCodeFromGenyMotion.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408622495818" ignored="false" />
+    <file path="/ExportQRCodeFromGenyMotionTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408621979014" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,19 +253,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="App.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java">
+      <file leaf-file-name="ExportQRCodeFromGenyMotionTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromGenyMotionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="24" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0">
+            <state line="22" column="39" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExportQRCodeFromContactTask.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ExportQRCodeFromContactTask.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromContactTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="12" selection-start="5148" selection-end="5148" vertical-scroll-proportion="0.84876543">
+            <state line="15" column="45" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -256,20 +273,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NRCClient.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/client/NRCClient.java">
+      <file leaf-file-name="ExportQRCodeFromGenyMotion.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromGenyMotion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="24" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SaveGroupToContactTask.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/SaveGroupToContactTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="31" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="156" column="16" selection-start="5669" selection-end="5669" vertical-scroll-proportion="7.2222223">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -427,22 +437,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/client/NRCClientTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/client/NRCClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/Task.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/TargetsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeTaskTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeTask.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/CreateGroupTaskTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/CreateGroupTask.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/TaskBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/SaveGroupToContactTaskTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/SaveGroupToContactTask.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromContactTaskTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromContactTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/client/NRCClient.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromGenyMotionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromGenyMotion.java" />
       </list>
     </option>
   </component>
@@ -539,6 +549,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeChatAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeChatAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="genymotion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -686,23 +730,24 @@
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.akqa.automation.task" />
       <recent name="com.akqa.automation.client" />
       <recent name="com.akqa.automation" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/target/genymotion" />
       <recent name="$PROJECT_DIR$/src/main/resources/target" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/target" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExportQRCodeFromContactTaskTest.testExecute">
-    <configuration default="false" name="ExportQRCodeFromContactTaskTest.testExportGroup" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RunManager" selected="JUnit.ExportQRCodeFromGenyMotionTest.testExecute">
+    <configuration default="false" name="ExportQRCodeFromGenyMotionTest.testBackHome" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.akqa.automation.task.*" />
@@ -713,8 +758,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.akqa.automation.task" />
-      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.ExportQRCodeFromContactTaskTest" />
-      <option name="METHOD_NAME" value="testExportGroup" />
+      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.ExportQRCodeFromGenyMotionTest" />
+      <option name="METHOD_NAME" value="testBackHome" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -730,7 +775,7 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="ExportQRCodeFromContactTaskTest.testEnterGroup" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="ExportQRCodeFromGenyMotionTest.testEnterContact" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.akqa.automation.task.*" />
@@ -741,8 +786,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.akqa.automation.task" />
-      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.ExportQRCodeFromContactTaskTest" />
-      <option name="METHOD_NAME" value="testEnterGroup" />
+      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.ExportQRCodeFromGenyMotionTest" />
+      <option name="METHOD_NAME" value="testEnterContact" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -758,7 +803,7 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="ExportQRCodeFromContactTaskTest.testExportQRCode" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="ExportQRCodeFromGenyMotionTest.testCutHead" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.akqa.automation.task.*" />
@@ -769,8 +814,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.akqa.automation.task" />
-      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.ExportQRCodeFromContactTaskTest" />
-      <option name="METHOD_NAME" value="testExportQRCode" />
+      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.ExportQRCodeFromGenyMotionTest" />
+      <option name="METHOD_NAME" value="testCutHead" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -786,7 +831,7 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="ExportQRCodeFromContactTaskTest.testExecute" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="ExportQRCodeFromGenyMotionTest.testLocate" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.akqa.automation.task.*" />
@@ -797,8 +842,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.akqa.automation.task" />
-      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.ExportQRCodeFromContactTaskTest" />
-      <option name="METHOD_NAME" value="testExecute" />
+      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.ExportQRCodeFromGenyMotionTest" />
+      <option name="METHOD_NAME" value="testLocate" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -814,7 +859,7 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="SaveGroupToContactTaskTest.testExecute" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="ExportQRCodeFromGenyMotionTest.testExecute" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.akqa.automation.task.*" />
@@ -825,7 +870,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.akqa.automation.task" />
-      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.SaveGroupToContactTaskTest" />
+      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.ExportQRCodeFromGenyMotionTest" />
       <option name="METHOD_NAME" value="testExecute" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -934,19 +979,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromContactTaskTest.testExportGroup" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromContactTaskTest.testEnterGroup" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromContactTaskTest.testExportQRCode" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromContactTaskTest.testExecute" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.SaveGroupToContactTaskTest.testExecute" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromGenyMotionTest.testBackHome" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromGenyMotionTest.testEnterContact" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromGenyMotionTest.testCutHead" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromGenyMotionTest.testLocate" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromGenyMotionTest.testExecute" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromContactTaskTest.testExecute" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SaveGroupToContactTaskTest.testExecute" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromContactTaskTest.testExportQRCode" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromContactTaskTest.testEnterGroup" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromContactTaskTest.testExportGroup" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromGenyMotionTest.testExecute" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromGenyMotionTest.testLocate" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromGenyMotionTest.testCutHead" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromGenyMotionTest.testEnterContact" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ExportQRCodeFromGenyMotionTest.testBackHome" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1118,14 +1163,18 @@
       <created>1408535801120</created>
       <updated>1408535801120</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="add new wechat group">
+      <created>1408614022943</created>
+      <updated>1408614022943</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="22" width="1375" height="878" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5368421" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53562003" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1136,19 +1185,19 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1820918" sideWeight="0.42520776" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21294206" sideWeight="0.4631579" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33933517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22046651" sideWeight="0.46437994" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33905014" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1221,21 +1270,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/TargetsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="63" selection-start="911" selection-end="1107" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/client/NRCClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/target/contact_entry.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/target/contact_group_entry.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1244,13 +1278,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/target/group_contact_list.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="31" selection-start="1426" selection-end="1426" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/CreateGroupTask.java">
@@ -1262,7 +1289,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/CreateGroupTaskTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="354" selection-end="373" vertical-scroll-proportion="0.0" />
+        <state line="16" column="25" selection-start="354" selection-end="373" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeTask.java">
@@ -1272,21 +1301,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/TaskBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="54" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/SaveGroupToContactTaskTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="20" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromContactTaskTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="30" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0" />
+        <state line="22" column="20" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/SaveGroupToContactTask.java">
@@ -1303,16 +1322,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="37" selection-start="3544" selection-end="3544" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/TaskBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="6" selection-start="2117" selection-end="2332" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/client/NRCClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="24" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0">
+        <state line="32" column="63" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromContactTaskTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="27" selection-start="1088" selection-end="1102" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromContactTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="12" selection-start="5148" selection-end="5148" vertical-scroll-proportion="0.84876543">
+        <state line="15" column="45" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromGenyMotionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="39" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromGenyMotion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="16" selection-start="5669" selection-end="5669" vertical-scroll-proportion="7.2222223">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
