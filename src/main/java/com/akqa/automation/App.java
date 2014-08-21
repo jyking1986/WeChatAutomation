@@ -28,13 +28,13 @@ public class App {
         String server = "runclub.nike.com.cn";//uat"114.215.189.62";
 
         NRCClient nrcClient = new NRCClient(server);
+
         Task createGroupTask = new CreateGroupTask(5, nrcClient);
         taskMap.put(createGroupTask.getName(), createGroupTask);
         Task exportQRCodeTask = new ExportQRCodeTask(nrcClient, 1700);
         taskMap.put(exportQRCodeTask.getName(), exportQRCodeTask);
         Task saveGroupToContactTask = new SaveGroupToContactTask(1700);
         taskMap.put(saveGroupToContactTask.getName(), saveGroupToContactTask);
-
         Task task = new ExportQRCodeFromContactTask(1700, nrcClient);
         taskMap.put(task.getName(), task);
 
@@ -48,19 +48,6 @@ public class App {
         String command = args[0];
         if (taskMap.containsKey(command)) {
             taskMap.get(command).execute();
-        } else if (command.equals("locate")) {
-            File file = new File(args[1]);
-            if (file.exists()) {
-                System.out.println("locate file:" + file.getName());
-                Target target = new ImageTarget(file);
-                checkNotNull(target);
-                ScreenRegion mainScreenRegion = new DesktopScreenRegion();
-                Mouse mouse = new DesktopMouse();
-                ScreenRegion screenRegion = mainScreenRegion.wait(target, 1000);
-                mouse.click(screenRegion.getCenter());
-            } else {
-                System.out.println("cannot find image file.");
-            }
         }
 
         System.exit(0);

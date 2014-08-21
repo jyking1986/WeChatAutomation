@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30491cfe-6136-47d8-b0c5-9a2620e40b7b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/confirm_group_contact_list.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/confirm_group_contact_snapshot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/confirm_group_detail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/confirm_qr_code_detail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/enter_group_button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/group_contact_entry.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/group_detail_entry_button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/main_nav.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/qr_code_bar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/qr_code_corner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/save_to_contact_bar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/wechat_nav.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromGenyMotion.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromGenyMotionTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/akqa/automation/client/NRCClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/akqa/automation/client/NRCClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java" afterPath="$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromGenyMotion.java" afterPath="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/genymotion/ExportQRCodeFromGenyMotion.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromGenyMotionTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/genymotion/ExportQRCodeFromGenyMotionTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java" afterPath="$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WeChatAutomation.iws" />
@@ -99,10 +86,10 @@
     <file path="/Task.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407847822256" ignored="false" />
     <file path="/CreateGroupTask.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408022155784" ignored="false" />
     <file path="/TaskBase.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407932808551" ignored="false" />
-    <file path="/fragment.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408617105179" ignored="false" />
+    <file path="/fragment.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408623785237" ignored="false" />
     <file path="/CreateGroupTaskTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407839730084" ignored="false" />
     <file path="/TargetsTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407921658937" ignored="false" />
-    <file path="/Dummy.txt" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408614016289" ignored="false" />
+    <file path="/Dummy.txt" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408623582925" ignored="false" />
     <file path="/ImageHelper.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407749045050" ignored="false" />
     <file path="$PROJECT_DIR$/../NikePlusRunClub/src/main/resources/i18n/messages_zh_CN.properties" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407752942326" ignored="false" />
     <file path="/ExportNewQRCodeTask.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407773238770" ignored="false" />
@@ -253,10 +240,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ExportQRCodeFromGenyMotionTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromGenyMotionTest.java">
+      <file leaf-file-name="App.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="39" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
+            <state line="30" column="0" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExportQRCodeFromGenyMotionTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/genymotion/ExportQRCodeFromGenyMotionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="39" selection-start="687" selection-end="687" vertical-scroll-proportion="0.8333333">
               <folding />
             </state>
           </provider>
@@ -273,13 +269,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExportQRCodeFromGenyMotion.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromGenyMotion.java">
+      <file leaf-file-name="ExportQRCodeFromGenyMotion.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/genymotion/ExportQRCodeFromGenyMotion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="16" selection-start="5669" selection-end="5669" vertical-scroll-proportion="7.2222223">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="20" column="27" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -447,12 +441,12 @@
         <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/SaveGroupToContactTaskTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/SaveGroupToContactTask.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromContactTaskTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromContactTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/client/NRCClient.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromGenyMotionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromGenyMotion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java" />
       </list>
     </option>
   </component>
@@ -529,30 +523,16 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WeChatAutomation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WeChatAutomation" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
+              <option name="myItemId" value="automation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -570,19 +550,71 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
+              <option name="myItemId" value="automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeChatAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeChatAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="genymotion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeChatAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeChatAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -639,6 +671,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeChatAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeChatAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="genymotion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -742,6 +808,9 @@
       <recent name="$PROJECT_DIR$/src/main/resources/target/genymotion" />
       <recent name="$PROJECT_DIR$/src/main/resources/target" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.akqa.automation.task.genymotion" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/target" />
     </key>
@@ -757,8 +826,8 @@
       <module name="WeChatAutomation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.akqa.automation.task" />
-      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.ExportQRCodeFromGenyMotionTest" />
+      <option name="PACKAGE_NAME" value="com.akqa.automation.task.genymotion" />
+      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.genymotion.ExportQRCodeFromGenyMotionTest" />
       <option name="METHOD_NAME" value="testBackHome" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -785,8 +854,8 @@
       <module name="WeChatAutomation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.akqa.automation.task" />
-      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.ExportQRCodeFromGenyMotionTest" />
+      <option name="PACKAGE_NAME" value="com.akqa.automation.task.genymotion" />
+      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.genymotion.ExportQRCodeFromGenyMotionTest" />
       <option name="METHOD_NAME" value="testEnterContact" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -813,8 +882,8 @@
       <module name="WeChatAutomation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.akqa.automation.task" />
-      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.ExportQRCodeFromGenyMotionTest" />
+      <option name="PACKAGE_NAME" value="com.akqa.automation.task.genymotion" />
+      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.genymotion.ExportQRCodeFromGenyMotionTest" />
       <option name="METHOD_NAME" value="testCutHead" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -841,8 +910,8 @@
       <module name="WeChatAutomation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.akqa.automation.task" />
-      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.ExportQRCodeFromGenyMotionTest" />
+      <option name="PACKAGE_NAME" value="com.akqa.automation.task.genymotion" />
+      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.genymotion.ExportQRCodeFromGenyMotionTest" />
       <option name="METHOD_NAME" value="testLocate" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -869,8 +938,8 @@
       <module name="WeChatAutomation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.akqa.automation.task" />
-      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.ExportQRCodeFromGenyMotionTest" />
+      <option name="PACKAGE_NAME" value="com.akqa.automation.task.genymotion" />
+      <option name="MAIN_CLASS_NAME" value="com.akqa.automation.task.genymotion.ExportQRCodeFromGenyMotionTest" />
       <option name="METHOD_NAME" value="testExecute" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1167,7 +1236,11 @@
       <created>1408614022943</created>
       <updated>1408614022943</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="add new wechat group">
+      <created>1408623588476</created>
+      <updated>1408623588476</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1192,7 +1265,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22046651" sideWeight="0.46437994" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3077502" sideWeight="0.46437994" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33905014" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1315,13 +1388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="24" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="37" selection-start="3544" selection-end="3544" vertical-scroll-proportion="0.0">
@@ -1361,19 +1427,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/ExportQRCodeFromGenyMotionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/genymotion/ExportQRCodeFromGenyMotion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="39" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
+        <state line="20" column="27" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/task/ExportQRCodeFromGenyMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="16" selection-start="5669" selection-end="5669" vertical-scroll-proportion="7.2222223">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="30" column="0" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/genymotion/ExportQRCodeFromGenyMotionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="39" selection-start="687" selection-end="687" vertical-scroll-proportion="0.8333333">
+          <folding />
         </state>
       </provider>
     </entry>

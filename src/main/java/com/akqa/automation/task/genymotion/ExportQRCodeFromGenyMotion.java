@@ -1,8 +1,9 @@
-package com.akqa.automation.task;
+package com.akqa.automation.task.genymotion;
 
 import com.akqa.automation.Targets;
 import com.akqa.automation.client.NRCClient;
 import com.akqa.automation.qrcode.ImageHelper;
+import com.akqa.automation.task.Task;
 import com.google.zxing.ChecksumException;
 import com.google.zxing.FormatException;
 import com.google.zxing.NotFoundException;
