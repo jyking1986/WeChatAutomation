@@ -29,7 +29,7 @@ public class ExportQRCodeFromContactTask extends TaskBase {
 
     @Override
     public void execute() {
-        int i = 9;
+        int i = 166;
         while (i <= groupCount) {
 
             try {
