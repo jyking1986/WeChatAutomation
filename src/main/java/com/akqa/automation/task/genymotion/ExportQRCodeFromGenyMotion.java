@@ -157,7 +157,7 @@ public class ExportQRCodeFromGenyMotion implements Task {
         checkNotNull(qrCode);
         Rectangle bounds = qrCode.getBounds();
         BufferedImage capture = mainScreenRegion.getScreen().getScreenshot(bounds.x, bounds.y, 255, 255);
-//        saveQRCode(capture, "test");
+        saveQRCode(capture, "test");
         String link = ImageHelper.extractContentFromQRCode(capture);
         log("Exporting qr code link: %s", link);
         client.refreshQRCodeLink(link);

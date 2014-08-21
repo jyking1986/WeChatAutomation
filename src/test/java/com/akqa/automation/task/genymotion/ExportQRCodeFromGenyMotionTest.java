@@ -1,7 +1,6 @@
 package com.akqa.automation.task.genymotion;
 
 import com.akqa.automation.client.NRCClient;
-import com.akqa.automation.task.genymotion.ExportQRCodeFromGenyMotion;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -21,7 +20,7 @@ public class ExportQRCodeFromGenyMotionTest {
 //        String server = "114.215.189.62";
         String server = "runclub.nike.com.cn";
         NRCClient client = new NRCClient(server);
-        task = new ExportQRCodeFromGenyMotion(client, 21, 166);
+        task = new ExportQRCodeFromGenyMotion(client, 1500, 206);
     }
 
     @Test
