@@ -17,7 +17,8 @@ public class App {
 
     public static void main(String[] args) {
         Map<String, Task> taskMap = new HashMap<>();
-        String server = "runclub.nike.com.cn";//uat"114.215.189.62";
+//        String server = "114.215.189.62";
+        String server = "runclub.nike.com.cn";
 
         NRCClient nrcClient = new NRCClient(server);
 
