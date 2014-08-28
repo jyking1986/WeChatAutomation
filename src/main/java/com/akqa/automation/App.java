@@ -1,10 +1,7 @@
 package com.akqa.automation;
 
 import com.akqa.automation.client.NRCClient;
-import com.akqa.automation.task.CreateGroupTask;
-import com.akqa.automation.task.ExportQRCodeTask;
-import com.akqa.automation.task.SaveGroupToContactTask;
-import com.akqa.automation.task.Task;
+import com.akqa.automation.task.*;
 import org.sikuli.api.DesktopScreenRegion;
 import org.sikuli.api.ImageTarget;
 import org.sikuli.api.ScreenRegion;
@@ -31,12 +28,15 @@ public class App {
         String server = "runclub.nike.com.cn";//uat"114.215.189.62";
 
         NRCClient nrcClient = new NRCClient(server);
+
         Task createGroupTask = new CreateGroupTask(5, nrcClient);
         taskMap.put(createGroupTask.getName(), createGroupTask);
-        Task exportQRCodeTask = new ExportQRCodeTask(nrcClient, 400);
+        Task exportQRCodeTask = new ExportQRCodeTask(nrcClient, 1700);
         taskMap.put(exportQRCodeTask.getName(), exportQRCodeTask);
-        Task saveGroupToContactTask = new SaveGroupToContactTask(400);
+        Task saveGroupToContactTask = new SaveGroupToContactTask(1700);
         taskMap.put(saveGroupToContactTask.getName(), saveGroupToContactTask);
+        Task task = new ExportQRCodeFromContactTask(1700, nrcClient);
+        taskMap.put(task.getName(), task);
 
         if (args.length < 1) {
             System.out.println("Only Support the following commands:");
@@ -48,19 +48,6 @@ public class App {
         String command = args[0];
         if (taskMap.containsKey(command)) {
             taskMap.get(command).execute();
-        } else if (command.equals("locate")) {
-            File file = new File(args[1]);
-            if (file.exists()) {
-                System.out.println("locate file:" + file.getName());
-                Target target = new ImageTarget(file);
-                checkNotNull(target);
-                ScreenRegion mainScreenRegion = new DesktopScreenRegion();
-                Mouse mouse = new DesktopMouse();
-                ScreenRegion screenRegion = mainScreenRegion.wait(target, 1000);
-                mouse.click(screenRegion.getCenter());
-            } else {
-                System.out.println("cannot find image file.");
-            }
         }
 
         System.exit(0);

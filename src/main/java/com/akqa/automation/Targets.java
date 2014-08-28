@@ -44,6 +44,7 @@ public final class Targets {
     public static final Target chatInformation = constructTarget("chat_information");
     public static final Target mainScreen = constructTarget("main_screen");
     private static final String RESOURCE_PATH_FORMAT = "/target/%s.png";
+    private static final String GENY_MOTION_RESOURCE_PATH_FORMAT = "/target/genymotion/%s.png";
 
     private static Target constructTarget(final String resourceName) {
         URL imageURL = App.class.getResource(String.format(RESOURCE_PATH_FORMAT, resourceName));
@@ -51,5 +52,27 @@ public final class Targets {
         imageTarget.setMinScore(0.88);
         return imageTarget;
     }
+
+    public static final Target confirm_group_contact_list = constructGenyTarget("confirm_group_contact_list");
+    public static final Target confirm_group_contact_snapshot = constructGenyTarget("confirm_group_contact_snapshot");
+    public static final Target confirm_group_detail = constructGenyTarget("confirm_group_detail");
+    public static final Target confirm_qr_code_detail = constructGenyTarget("confirm_qr_code_detail");
+    public static final Target enter_group_button = constructGenyTarget("enter_group_button");
+    public static final Target group_contact_entry = constructGenyTarget("group_contact_entry");
+    public static final Target group_detail_entry_button = constructGenyTarget("group_detail_entry_button");
+    public static final Target main_nav = constructGenyTarget("main_nav");
+    public static final Target qr_code_bar = constructGenyTarget("qr_code_bar");
+    public static final Target qr_code_corner = constructGenyTarget("qr_code_corner");
+    public static final Target save_to_contact_bar = constructGenyTarget("save_to_contact_bar");
+    public static final Target wechat_nav = constructGenyTarget("wechat_nav");
+
+    private static Target constructGenyTarget(final String resourceName) {
+        URL imageURL = App.class.getResource(String.format(GENY_MOTION_RESOURCE_PATH_FORMAT, resourceName));
+        ImageTarget imageTarget = new ImageTarget(imageURL);
+        imageTarget.setMinScore(0.88);
+        return imageTarget;
+    }
+
+
 
 }

@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.ws.rs.core.MediaType;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -40,5 +41,11 @@ public class NRCClient {
                 .type(MediaType.APPLICATION_JSON).post(ClientResponse.class, links);
 
         log.info(response.getEntity(String.class));
+    }
+
+    public void refreshQRCodeLink(final String link) {
+        List<String> links = new ArrayList<>();
+        links.add(link);
+        refreshQRCodeLinks(links);
     }
 }
