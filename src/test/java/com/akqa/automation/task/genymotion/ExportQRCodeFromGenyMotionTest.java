@@ -17,8 +17,8 @@ public class ExportQRCodeFromGenyMotionTest {
 
     @Before
     public void setUp() throws Exception {
-//        String server = "114.215.189.62";
-        String server = "runclub.nike.com.cn";
+        String server = "114.215.189.62";
+//        String server = "runclub.nike.com.cn";
         NRCClient client = new NRCClient(server);
         task = new ExportQRCodeFromGenyMotion(client, 1500, 206);
     }
@@ -60,8 +60,9 @@ public class ExportQRCodeFromGenyMotionTest {
     public void testLocate() throws Exception {
         ScreenRegion main = task.backHome();
         ScreenRegion topBar = task.enterContact(main);
+//        task.cutHead(topBar);
         task.locateGroup(11, topBar);
-        task.enterGroupContactSnapshot();
+//        task.enterGroupContactSnapshot();
         task.enterGroupDetail();
         task.enterQRCodePage();
         task.exportQRCode();

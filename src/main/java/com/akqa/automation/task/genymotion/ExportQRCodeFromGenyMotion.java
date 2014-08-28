@@ -51,7 +51,6 @@ public class ExportQRCodeFromGenyMotion implements Task {
                 ScreenRegion main = backHome();
                 ScreenRegion topBar = enterContact(main);
                 locateGroup(index, topBar);
-                enterGroupContactSnapshot();
                 enterGroupDetail();
                 enterQRCodePage();
                 exportQRCode();
@@ -79,7 +78,7 @@ public class ExportQRCodeFromGenyMotion implements Task {
 
     ScreenRegion enterContact(ScreenRegion home) {
         checkNotNull(home);
-        mouse.click(home.getRelativeScreenLocation(380, 80));
+        mouse.click(home.getRelativeScreenLocation(170, 720));
 
         ScreenRegion groupEntry = mainScreenRegion.wait(Targets.group_contact_entry, TIMEOUT);
         mouse.click(groupEntry.getCenter());
@@ -97,7 +96,7 @@ public class ExportQRCodeFromGenyMotion implements Task {
         }
         int indexInsidePage = index % 10;
         indexInsidePage = indexInsidePage == 0 ? 10 : indexInsidePage;
-        mouse.click(topBar.getRelativeScreenLocation(300, 100 + 70 * (indexInsidePage - 1)));
+        mouse.click(topBar.getRelativeScreenLocation(300, 80 + 70 * (indexInsidePage - 1)));
     }
 
     void enterGroupContactSnapshot() {
@@ -116,15 +115,15 @@ public class ExportQRCodeFromGenyMotion implements Task {
     }
 
     void gotoPage(ScreenRegion topBar) {
-        ScreenLocation from = topBar.getRelativeScreenLocation(300, 750);
+        ScreenLocation from = topBar.getRelativeScreenLocation(300, 730);
         mouse.drag(from);
-        mouse.drop(Relative.to(from).above(700).getScreenLocation());
+        mouse.drop(Relative.to(from).above(710).getScreenLocation());
     }
 
     void cutHead(ScreenRegion topBar) {
         ScreenLocation from = topBar.getRelativeScreenLocation(300, 300);
         mouse.drag(from);
-        mouse.drop(Relative.to(from).above(56).getScreenLocation());
+        mouse.drop(Relative.to(from).above(44).getScreenLocation());
     }
 
     void enterGroupDetail() {
@@ -137,16 +136,23 @@ public class ExportQRCodeFromGenyMotion implements Task {
         ScreenRegion topBar = mainScreenRegion.wait(Targets.confirm_group_detail, TIMEOUT);
         checkNotNull(topBar);
 
+        cutHead(topBar);
         ScreenRegion qrCodeBar = mainScreenRegion.wait(Targets.qr_code_bar, TIMEOUT);
         if (qrCodeBar == null) {
-            cutHead(topBar);
-            mouse.wheel(-1, 50);
+            ScreenRegion bottom = mainScreenRegion.wait(Targets.groupDetailBottom, TIMEOUT);
+            int retry = 5;
+            while (retry-- > 0 && bottom == null) {
+                mouse.wheel(-1, 20);
+                bottom = mainScreenRegion.wait(Targets.groupDetailBottom, TIMEOUT);
+            }
+
+            checkNotNull(bottom);
             ScreenLocation from = topBar.getRelativeScreenLocation(300, 200);
             mouse.drag(from);
             mouse.drop(Relative.to(from).below(400).getScreenLocation());
             qrCodeBar = mainScreenRegion.wait(Targets.qr_code_bar, TIMEOUT);
-            checkNotNull(qrCodeBar);
         }
+
         mouse.click(qrCodeBar.getCenter());
     }
 
@@ -156,7 +162,7 @@ public class ExportQRCodeFromGenyMotion implements Task {
         ScreenRegion qrCode = mainScreenRegion.wait(Targets.qr_code_corner, TIMEOUT * 8);
         checkNotNull(qrCode);
         Rectangle bounds = qrCode.getBounds();
-        BufferedImage capture = mainScreenRegion.getScreen().getScreenshot(bounds.x, bounds.y, 255, 255);
+        BufferedImage capture = mainScreenRegion.getScreen().getScreenshot(bounds.x, bounds.y, 285, 285);
         saveQRCode(capture, "test");
         String link = ImageHelper.extractContentFromQRCode(capture);
         log("Exporting qr code link: %s", link);

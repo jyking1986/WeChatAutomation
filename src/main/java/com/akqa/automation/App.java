@@ -2,18 +2,10 @@ package com.akqa.automation;
 
 import com.akqa.automation.client.NRCClient;
 import com.akqa.automation.task.*;
-import org.sikuli.api.DesktopScreenRegion;
-import org.sikuli.api.ImageTarget;
-import org.sikuli.api.ScreenRegion;
-import org.sikuli.api.Target;
-import org.sikuli.api.robot.Mouse;
-import org.sikuli.api.robot.desktop.DesktopMouse;
+import com.akqa.automation.task.genymotion.ExportQRCodeFromGenyMotion;
 
-import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
-
-import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
  * Created with IntelliJ IDEA.
@@ -37,6 +29,9 @@ public class App {
         taskMap.put(saveGroupToContactTask.getName(), saveGroupToContactTask);
         Task task = new ExportQRCodeFromContactTask(1700, nrcClient);
         taskMap.put(task.getName(), task);
+
+        ExportQRCodeFromGenyMotion exportQRCodeFromGenyMotionTask = new ExportQRCodeFromGenyMotion(nrcClient, 1700, 1);
+        taskMap.put(exportQRCodeFromGenyMotionTask.getName(), exportQRCodeFromGenyMotionTask);
 
         if (args.length < 1) {
             System.out.println("Only Support the following commands:");

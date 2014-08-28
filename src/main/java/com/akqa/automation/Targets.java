@@ -65,6 +65,7 @@ public final class Targets {
     public static final Target qr_code_corner = constructGenyTarget("qr_code_corner");
     public static final Target save_to_contact_bar = constructGenyTarget("save_to_contact_bar");
     public static final Target wechat_nav = constructGenyTarget("wechat_nav");
+    public static final Target groupDetailBottom = constructGenyTarget("group_detail_bottom");
 
     private static Target constructGenyTarget(final String resourceName) {
         URL imageURL = App.class.getResource(String.format(GENY_MOTION_RESOURCE_PATH_FORMAT, resourceName));
