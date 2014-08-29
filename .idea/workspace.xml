@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30491cfe-6136-47d8-b0c5-9a2620e40b7b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/group_detail_bottom.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/target/genymotion/confirm_group_contact_list.png" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/confirm_group_contact_list.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/target/genymotion/confirm_group_detail.png" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/confirm_group_detail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/target/genymotion/confirm_qr_code_detail.png" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/confirm_qr_code_detail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/target/genymotion/group_contact_entry.png" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/group_contact_entry.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/target/genymotion/group_detail_entry_button.png" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/group_detail_entry_button.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/target/genymotion/main_nav.png" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/main_nav.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/target/genymotion/qr_code_bar.png" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/qr_code_bar.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/target/genymotion/qr_code_corner.png" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/qr_code_corner.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/target/genymotion/wechat_nav.png" afterPath="$PROJECT_DIR$/src/main/resources/target/genymotion/wechat_nav.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java" afterPath="$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/genymotion/ExportQRCodeFromGenyMotion.java" afterPath="$PROJECT_DIR$/src/main/java/com/akqa/automation/task/genymotion/ExportQRCodeFromGenyMotion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/genymotion/ExportQRCodeFromGenyMotionTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/akqa/automation/task/genymotion/ExportQRCodeFromGenyMotionTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java" afterPath="$PROJECT_DIR$/src/main/java/com/akqa/automation/Targets.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WeChatAutomation.iws" />
@@ -101,7 +88,7 @@
     <file path="/fragment.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1408328712770" ignored="false" />
     <file path="/CreateGroupTaskTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407839730084" ignored="false" />
     <file path="/TargetsTest.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407921658937" ignored="false" />
-    <file path="/Dummy.txt" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1409239418661" ignored="false" />
+    <file path="/Dummy.txt" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1409241776449" ignored="false" />
     <file path="/ImageHelper.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407749045050" ignored="false" />
     <file path="$PROJECT_DIR$/../NikePlusRunClub/src/main/resources/i18n/messages_zh_CN.properties" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407752942326" ignored="false" />
     <file path="/ExportNewQRCodeTask.java" changelist="30491cfe-6136-47d8-b0c5-9a2620e40b7b" time="1407773238770" ignored="false" />
@@ -269,19 +256,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="App.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="13" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0">
+            <state line="41" column="43" selection-start="1566" selection-end="1566" vertical-scroll-proportion="1.6279069">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="73" selection-start="2221" selection-end="2221" vertical-scroll-proportion="0.8117284">
+            <state line="69" column="73" selection-start="2221" selection-end="2221" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -291,7 +278,9 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/genymotion/ExportQRCodeFromGenyMotionTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="66" column="39" selection-start="1644" selection-end="1644" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1239,21 +1228,29 @@
       <created>1409238774436</created>
       <updated>1409238774436</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="add new wechat group">
+      <created>1409241402302</created>
+      <updated>1409241402302</updated>
+    </task>
+    <task id="LOCAL-00036" summary="add new wechat group">
+      <created>1409241778864</created>
+      <updated>1409241778864</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="22" width="1397" height="878" extended-state="0" />
+    <frame x="43" y="22" width="1397" height="878" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53562003" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53562003" sideWeight="0.4996299" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53562003" sideWeight="0.5003701" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1820918" sideWeight="0.42520776" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1264,7 +1261,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23686159" sideWeight="0.46437994" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30792007" sideWeight="0.46437994" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33905014" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1392,7 +1389,9 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/akqa/automation/task/genymotion/ExportQRCodeFromGenyMotionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="39" selection-start="1644" selection-end="1644" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1410,16 +1409,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="13" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0">
+        <state line="69" column="73" selection-start="2221" selection-end="2221" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/akqa/automation/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="73" selection-start="2221" selection-end="2221" vertical-scroll-proportion="0.8117284">
+        <state line="41" column="43" selection-start="1566" selection-end="1566" vertical-scroll-proportion="1.6279069">
           <folding />
         </state>
       </provider>
