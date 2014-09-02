@@ -31,7 +31,7 @@ public class App {
         Task task = new ExportQRCodeFromContactTask(1700, nrcClient);
         taskMap.put(task.getName(), task);
 
-        ExportQRCodeFromGenyMotion exportQRCodeFromGenyMotionTask = new ExportQRCodeFromGenyMotion(nrcClient, 1700, 1);
+        ExportQRCodeFromGenyMotion exportQRCodeFromGenyMotionTask = new ExportQRCodeFromGenyMotion(nrcClient, 1700, Integer.valueOf(System.getProperty("offset",""+1)));
         taskMap.put(exportQRCodeFromGenyMotionTask.getName(), exportQRCodeFromGenyMotionTask);
 
         if (args.length < 1) {

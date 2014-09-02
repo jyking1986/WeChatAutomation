@@ -96,7 +96,7 @@ public class ExportQRCodeFromGenyMotion implements Task {
         }
         int indexInsidePage = index % 10;
         indexInsidePage = indexInsidePage == 0 ? 10 : indexInsidePage;
-        mouse.click(topBar.getRelativeScreenLocation(300, 80 + 70 * (indexInsidePage - 1)));
+        mouse.click(topBar.getRelativeScreenLocation(300, 80 + 68 * (indexInsidePage - 1)));
     }
 
     void enterGroupContactSnapshot() {
@@ -117,7 +117,7 @@ public class ExportQRCodeFromGenyMotion implements Task {
     void gotoPage(ScreenRegion topBar) {
         ScreenLocation from = topBar.getRelativeScreenLocation(300, 730);
         mouse.drag(from);
-        mouse.drop(Relative.to(from).above(710).getScreenLocation());
+        mouse.drop(Relative.to(from).above(707).getScreenLocation());
     }
 
     void cutHead(ScreenRegion topBar) {

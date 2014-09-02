@@ -61,11 +61,11 @@ public class ExportQRCodeFromGenyMotionTest {
         ScreenRegion main = task.backHome();
         ScreenRegion topBar = task.enterContact(main);
 //        task.cutHead(topBar);
-        task.locateGroup(11, topBar);
+        task.locateGroup(51, topBar);
 //        task.enterGroupContactSnapshot();
-        task.enterGroupDetail();
-        task.enterQRCodePage();
-        task.exportQRCode();
+//        task.enterGroupDetail();
+//        task.enterQRCodePage();
+//        task.exportQRCode();
     }
 
     @Test
