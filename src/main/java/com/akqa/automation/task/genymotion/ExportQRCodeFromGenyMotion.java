@@ -67,11 +67,14 @@ public class ExportQRCodeFromGenyMotion implements Task {
         int tryLimit = 5;
         while (mainNav == null && tryLimit-- > 0) {
             ScreenRegion nav = mainScreenRegion.wait(Targets.wechat_nav, TIMEOUT);
-            mouse.doubleClick(nav.getCenter());
+            if (nav != null) {
+                mouse.doubleClick(nav.getCenter());
+            }
             mainNav = mainScreenRegion.wait(Targets.main_nav, TIMEOUT);
         }
 
         checkNotNull(mainNav);
+        mouse.click(mainNav.getCenter());
 
         return mainNav;
     }
