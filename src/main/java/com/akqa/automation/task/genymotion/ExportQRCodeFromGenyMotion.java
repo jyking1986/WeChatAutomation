@@ -127,7 +127,7 @@ public class ExportQRCodeFromGenyMotion implements Task {
     }
 
     void enterGroupDetail() {
-        ScreenRegion groupDetailEntry = mainScreenRegion.wait(Targets.group_detail_entry_button, TIMEOUT);
+        ScreenRegion groupDetailEntry = mainScreenRegion.wait(Targets.group_detail_entry_button, TIMEOUT * 4);
         checkNotNull(groupDetailEntry);
         mouse.click(groupDetailEntry.getCenter());
     }

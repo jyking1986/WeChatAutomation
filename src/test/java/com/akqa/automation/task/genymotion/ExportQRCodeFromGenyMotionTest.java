@@ -63,7 +63,7 @@ public class ExportQRCodeFromGenyMotionTest {
 //        task.cutHead(topBar);
         task.locateGroup(51, topBar);
 //        task.enterGroupContactSnapshot();
-//        task.enterGroupDetail();
+        task.enterGroupDetail();
 //        task.enterQRCodePage();
 //        task.exportQRCode();
     }
